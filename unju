@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sisters of St. Joseph of Saint-Marc</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/tiny-slider.css">
+    <link rel="stylesheet" href="css/flatpickr.min.css">
+    <link rel="stylesheet" href="css/aos.css">
+    <link rel="stylesheet" href="css/glightbox.min.css">
+    <link rel="stylesheet" href="css/navbar.css">
+    <link rel="stylesheet" href="css/counter.css">
+    <link rel="stylesheet" href="css/custom.css">
+</head>
+<body>
+    <div class="section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <p>Un accueil chaleureux aux Sœurs de Saint-Joseph de Saint-Marc ! Vous découvrirez combien nous sommes uniques, vivant notre charisme et notre spiritualité dans 7 pays différents : France, Allemagne, Inde, Italie, États-Unis, Philippines et Ukraine. Nous venons de 9 nationalités différentes : française, allemande, indienne, philippine, ukrainienne, congolaise, malgache, slovaque et américaine. Oui, nous vivons dans l'unité dans la diversité.</p>
+
+                    <p>Notre communauté prospère grâce à des valeurs partagées et au respect mutuel, favorisant un profond sentiment de fraternité mondiale. Chaque sœur apporte sa richesse culturelle, enrichissant notre mission collective de servir avec amour et compassion. Ensemble, nous incarnons un mélange harmonieux de traditions et de modernité, dédiées à avoir un impact positif dans le monde entier.</p>
+
+                    <p>Le Père Pierre a envisagé cette communauté comme un groupe de sœurs avec un grand amour pour la Sainte Eucharistie et l'enthousiasme pour le service des pauvres et des souffrants. Notre mission est d'amener tous à l'unité avec Dieu, les uns avec les autres, avec toute la création.</p>
+                </div>
+            </div><br>
+        </div>
+    </div>
+    <div class="section sec-features">
+        <div class="container">
+            <div class="row g-5">
+                <div class="col-12 col-sm-6 col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="0">
+                    <div class="feature d-flex">
+                        <div>
+                            <h3>Notre Charisme</h3>
+                            <p>Le charisme de notre congrégation est l'adoration perpétuelle du Seigneur dans le Très Saint Sacrement et l'éducation des enfants ainsi que la prise en charge des pauvres et des malades.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
+                    <div class="feature d-flex">
+                        <div>
+                            <h3>Notre Devise</h3>
+                            <p>La devise de notre congrégation est « Adorer pour servir et servir pour adorer ». Le culte eucharistique conduit les membres au service fraternel.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="200">
+                    <div class="feature d-flex">
+                        <div>
+                            <h3>Formation Continue</h3>
+                            <p>La formation des sœurs ne se termine pas avec l'engagement définitif. Elles doivent continuer leur éducation spirituelle, théorique et pratique et renouveler leurs connaissances professionnelles.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-7 order-lg-2 mb-4 mb-lg-0">
+                    <img src="image14 (4).jpg" alt="Image" class="img-fluid">
+                </div>
+                <div class="col-lg-5 pe-lg-5">
+                    <div class="mb-5">
+                        <h2 class="text-black h4">Aperçu de SJSM</h2>
+                    </div>
+                    <div class="d-flex mb-3 service-alt">
+                        <div>
+                            <h3></h3>
+                            <p>La Congrégation des Sœurs de Saint-Joseph de Saint-Marc a été fondée par le rêve et le désir du Père Pierre Paul Blanck de Turckheim, Alsace en France. Il a été profondément influencé par la personnalité exceptionnelle de son père, François Joseph, qui était médecin et chrétien exemplaire. Il participait à la messe chaque jour et portait toujours avec lui le livret de Saint Alphonse de Liguori intitulé, « Visites au Très Saint Sacrement ».</p>
+                            <p>Dès le début, l'Abbé Blanck a voulu placer la Congrégation dans le rayonnement de Jésus eucharistique. Dans cette perspective, il a suggéré aux « personnes ayant plus de goût pour la prière et la solitude » de former une communauté dédiée à l'adoration perpétuelle du Seigneur présent dans le Très Saint Sacrement.</p>
+                            <p>Le Fondateur a placé la communauté sous le patronage de Saint Joseph. Joseph n'est-il pas le plus grand contemplatif de tous, le silencieux attentif à la Parole de Dieu et engageant toute sa conscience en tant qu'homme responsable pour lui obéir ? Dieu lui-même l'investit de son autorité et lui confie le rôle de Père pour son Fils engendré. Avec Marie, Joseph est associé à la grande œuvre de salut.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="section">
+        <div class="container">
+            <div class="row justify-content-between">
+                <div class="col-lg-7 mb-4 mb-lg-0" data-aos="fade-up">
+                    <img src="image17.jpeg" alt="Image" class="img-fluid rounded">
+                </div>
+                <div class="col-lg-4 ps-lg-2" data-aos="fade-up" data-aos-delay="100">
+                    <div class="mb-5">
+                        <p>Selon le Père Paul Blanck, le but de la Congrégation devrait être :</p>
+                        <ul class="d-block text-black">
+                            <li>Adoration perpétuelle de Jésus Christ dans le Très Saint Sacrement</li>
+                            <li>Éducation des enfants</li>
+                            <li>Soins des malades et des pauvres.</li>
+                        </ul>
+                        <p>Dans sa vision, cette Congrégation serait une bénédiction pour le diocèse et l'Église entière par leur vie de prière zélée, leur travail et leur ascèse. Aujourd'hui, SJSM a 4 provinces et 1 région. La Mère Province est à Saint-Marc, France, qui a 10 communautés. La Province allemande compte 11 communautés. La Province Sanjo, Vengoor en Inde compte 36 communautés, réparties dans 7 États (Kerala, Tamil Nadu, Andhra Pradesh, Maharashtra, Uttar Pradesh, Uttarakhand, Jharkhand et Delhi) et 3 pays (Inde, USA et Philippines). La Province Saint-Joseph, Indore – Inde compte 35 communautés largement réparties dans 10 États (Madhya Pradesh, Kerala, Maharashtra, Orissa, Karnataka, Andhra Pradesh, Pendjab, Manipur, Assam et Nagaland) et dans 3 pays (Inde, USA et Italie). La région d'Ukraine compte 3 communautés : 1 à Kiev, 1 à Lviv et 1 à Pausching. « Vivre le mystère de l'Eucharistie est la caractéristique essentielle de notre Congrégation », et c'est ce que nous, en tant que membres de SJSM, nous efforçons de faire dans nos vies.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="section sec-news">
+        <div class="container">
+            <div class="row mb-5">
+                <div class="col-lg-7">
+                    <h2 class="heading text-primary">Dernières Nouvelles</h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="card post-entry">
+                        <a href="single.html"><img src="100.jpg" class="card-img-top" alt="Image"></a>
+                        <div class="card-body">
+                            <div><span class="text-uppercase font-weight-bold date">1er MAI 2024</span></div>
+                            <h5 class="card-title"><a href="blog.html">La 34e Chapitre Général</a></h5>
+                            <p>La 34e Chapitre Général de la Congrégation de SJSM s'est tenue à Saint-Marc en France du 1er au 13 mai 2024.</p>
+                            <p><a href="single.html">Lire la suite</a></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="card post-entry">
+                        <a href="single.html"><img src="101.jpg" class="card-img-top" alt="Image"></a>
+                        <div class="card-body">
+                            <div><span class="text-uppercase font-weight-bold date">11 oct. 2023</span></div>
+                            <h5 class="card-title"><a href="blog.html">Mission à Madagascar</a></h5>
+                            <p>Du 11 au 18 octobre, Sœur Sheeba Thomas, Sœur Chimene et Sœur Shobha Stanly se sont rendues en mission à Madagascar.</p>
+                            <p><a href="single.html">Lire la suite</a></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="card post-entry">
+                        <a href="single.html"><img src="102.jpg" class="card-img-top" alt="Image"></a>
+                        <div class="card-body">
+                            <div><span class="text-uppercase font-weight-bold date">18 JAN</span></div>
+                            <h5 class="card-title"><a href="blog.html">Communautés aux Philippines</a></h5>
+                            <p>Les communautés aux Philippines ont été établies en 2008. De jeunes filles montrent un intérêt pour devenir membres...</p>
+                            <p><a href="single.html">Lire la suite</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="footer section">
+        <div class="container">
+            <div class="row mb-4">
+                <div class="col-lg-4 me-auto">
+                    <h3 class="text-white mb-3">Sisters of St. Joseph of Saint-Marc</h3>
+                    <p>We serve with dedication and compassion, guided by our charism and spirituality.</p>
+                </div>
+                <div class="col-lg-2">
+                    <h3 class="text-white mb-3">Links</h3>
+                    <ul class="list-unstyled">
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="events.html">Events</a></li>
+                        <li><a href="donate.html">Donate</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2">
+                    <h3 class="text-white mb-3">Follow Us</h3>
+                    <ul class="list-unstyled">
+                        <li><a href="#">Facebook</a></li>
+                        <li><a href="#">Twitter</a></li>
+                        <li><a href="#">Instagram</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row text-center">
+                <div class="col-12">
+                    <p class="mb-0 text-white">© 2024 Sisters of St. Joseph of Saint-Marc. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/tiny-slider.js"></script>
+    <script src="js/flatpickr.min.js"></script>
+    <script src="js/aos.js"></script>
+    <script src="js/glightbox.min.js"></script>
+    <script src="js/navbar.js"></script>
+    <script src="js/counter.js"></script>
+    <script src="js/custom.js"></script>
+</body>
+</html>
