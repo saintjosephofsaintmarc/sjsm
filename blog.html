@@ -1,10 +1,3 @@
-
-<!-- /*
-* Template Name: Financing
-* Template Author: Untree.co
-* Template URI: https://untree.co/
-* License: https://creativecommons.org/licenses/by/3.0/
-*/ -->
 <!doctype html>
 <html lang="en">
 <head>
@@ -35,6 +28,7 @@
 
   <title>SJSM &mdash; Sisters of St.joseph of Saint marc</title>
   <style>
+    /* === GLOBAL IMAGE CARD STYLES (Existing 5-Column Grid) === */
     .image-card {
       display: flex;
       flex-wrap: wrap;
@@ -47,8 +41,10 @@
 
     .image-card img {
       width: calc(20% - 15px);
-      height: auto;
+      height: 180px; /* Set a consistent height */
+      object-fit: cover; /* Ensure images cover the area */
       margin-bottom: 15px;
+      border-radius: 5px; /* Added border-radius for consistency */
     }
 
     @media (max-width: 992px) {
@@ -68,6 +64,59 @@
         width: calc(100% - 5px);
       }
     }
+    
+    /* === USA GALLERY 1 SPECIFIC STYLES (4-Column Responsive Grid) === */
+    /* This targets the first USA gallery (Generalate Images) to be 4 columns. */
+    .usa-gallery-card {
+        padding: 20px; /* Ensure padding is applied to the card */
+    }
+    .usa-gallery-card img {
+        width: calc(25% - 12px) !important; /* 4 images per row for desktop */
+        height: 200px !important; /* fixed height for all images */
+        object-fit: cover; /* keeps aspect ratio, crops if needed */
+        margin-bottom: 15px;
+        border-radius: 8px; /* Added border-radius for consistency */
+    }
+    
+    /* === USA GALLERY 2 SPECIFIC STYLES (5-Column Responsive Grid) === */
+    /* This targets the second USA gallery (Alternate Gallery) to be 5 columns. */
+    .usa-alternate-gallery {
+        padding: 20px; /* Ensure padding is applied to the card */
+    }
+    .usa-alternate-gallery img {
+        width: calc(20% - 12px) !important; /* 5 images per row for desktop */
+        height: 200px !important; /* fixed height for all images */
+        object-fit: cover; /* keeps aspect ratio, crops if needed */
+        margin-bottom: 15px;
+        border-radius: 8px; /* Added border-radius for consistency */
+    }
+
+    /* Media queries for all USA galleries (3, 2, 1 columns on smaller screens) */
+    @media (max-width: 992px) {
+        .usa-gallery-card img,
+        .usa-alternate-gallery img {
+            width: calc(33.33% - 10px) !important; /* 3 images per row on tablet */
+            height: 180px !important;
+        }
+    }
+
+    @media (max-width: 768px) {
+        .usa-gallery-card img,
+        .usa-alternate-gallery img {
+            width: calc(50% - 7.5px) !important; /* 2 images per row on larger phones */
+            height: 150px !important;
+        }
+    }
+
+    @media (max-width: 576px) {
+        .usa-gallery-card img,
+        .usa-alternate-gallery img {
+            width: calc(100% - 5px) !important; /* 1 image per row on small phones */
+            height: 150px !important;
+        }
+    }
+    /* === END USA GALLERY SPECIFIC STYLES === */
+
 
     .site-nav .menu-bg-wrap {
       background-image: url('');
@@ -82,14 +131,14 @@
     }
 
    .hero.overlay.inner-page {
-	background: 
-	  linear-gradient(rgba(93, 99, 115, 0.7), rgba(93, 99, 115, 0.7)),
-		url('Saint-Marc + Therese Avila.jpg') no-repeat center center;
-	
-	background-size: cover !important;
-	background-position: center !important;
-	background-repeat: no-repeat !important;
-	width: 100%;
+    background: 
+      linear-gradient(rgba(93, 99, 115, 0.7), rgba(93, 99, 115, 0.7)),
+        url('Saint-Marc + Therese Avila.jpg') no-repeat center center;
+    
+    background-size: cover !important;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+    width: 100%;
 }
 
   
@@ -126,12 +175,12 @@
 <body>
   <div class="site-mobile-menu site-navbar-target">
      <div class="site-mobile-menu-header">
-	<div class="site-mobile-menu-close">
-	   <span class="icofont-close js-menu-toggle"></span>
-		</div>
-	  </div>
-	 <div class="site-mobile-menu-body"></div>
-	</div>
+    <div class="site-mobile-menu-close">
+       <span class="icofont-close js-menu-toggle"></span>
+        </div>
+      </div>
+     <div class="site-mobile-menu-body"></div>
+    </div>
   <nav class="site-nav">
     <div class="container">
       <div class="menu-bg-wrap">
@@ -254,6 +303,50 @@
     }
 </style>
 
+<div class="section sec-news">
+  <div class="container">
+    <div class="card-body text-center">
+      <h3 class="center-heading text-black mb-4">INFORMATION FROM THE GENERALATE – 2025</h3>
+    <div class="image-card usa-gallery-card">
+      <img src="generalate/image1.jpeg" alt="Image 1">
+      <img src="generalate/image2.png" alt="Image 2">
+      <img src="generalate/image12.jpeg" alt="Image 3">
+      <img src="generalate/image14.jpeg" alt="Image 4">
+      <img src="generalate/image15.jpeg" alt="Image 5">
+      <img src="generalate/image6.jpeg" alt="">
+      <img src="generalate/image7.jpeg" alt="">
+      <img src="generalate/image24.jpeg" alt="">
+      <img src="generalate/image17.jpeg" alt="Image 7">
+      <img src="generalate/image21.jpeg" alt="Image 8">
+      <img src="generalate/image5.jpeg" alt="Image 9">
+      <img src="generalate/image9.jpeg" alt="Image 10">
+    </div>
+    <div>
+      <p> <b>Spiritual Reflection & Core Message</p></b>
+The year 2025, with all its "ups and downs, moments of joys, sorrows, stress, good health and illness," brings us to the profound realization of St. Teresa of Avila: **"God alone suffices!"** This truth guides us through all moments, bright and challenging, toward God's "majestic mercy and love."
+<br>
+---
+
+<b>Generalate Missions and Community Life in 2025</b> 
+
+The year 2025 was marked by extensive global travel and significant spiritual and administrative milestones for the Sisters of St. Joseph of Saint-Marc.
+
+**Global Outreach:** Superior General Sr. Shobha Stanly and General Councilor Sr. Ligy Payyappilly spent three months (Jan 2 – Mar 28) on a massive visitation across **India**, reaching 36 communities in both provinces and witnessing the Final Commitments of several sisters. The Generalate also expanded its roots as Sr. Danièle Vetter and Sr. Sheeba Thomas traveled to **Madagascar** in March to bless and inaugurate the Congregation's first convent there. Later in the year (Aug 5 – 20), Sr. Marie-Therese Frie and Sr. Ligy Payyappilly made their first visit to the thriving communities in the **Philippines**. 
+
+**Congregational Leadership:** A pivotal moment occurred in May when Sr. Shobha Stanly attended the **UISG Conference** in **Rome**, an important gathering of Superiors General. During her visit, she witnessed the historic election of the **New Pope Leo XIV** on May 8th, confirming the vibrant faith of the global Church. Administratively, the **European Councils’ Meeting** was held in Saint-Marc (May 22 – 23) to address pressing issues in European religious life.
+
+**Spiritual and Administrative Milestones:** The year included joyful celebrations like the **Final Commitment of Sr. Tavika in Ukraine** (Sept 6) and the visit of Archbishop Stephan Burger to the St. Trudpert Provincial House in November for the Feast of Christ the King. Personally, there was joy as Sr. Mary Kannampuzha successfully earned her **European driving license** (Oct 27). The Congregation also celebrated the release of Sr. Ligy Payyappilly's book, **'Called to Ukraine,'** in January, and her two weeks dedicated to preaching the Scriptures in **Spain** in September, a marvelous contribution to spreading the Good News.
+
+
+		</p>
+		  <p>
+            <strong>Sr. Shobha Stanly,<br>
+            Superior General SJSM</strong>
+        </p>
+    </div>
+  </div>
+</div>
+</div>
 <div class="container mt-5">
     <div class="row justify-content-center align-items-stretch">
         <div class="col-md-12">
@@ -348,23 +441,23 @@
   </div>
 </div>
 
-
 <div class="section sec-news">
   <div class="container">
     <div class="card-body text-center">
-      <h3 class="center-heading text-black mb-4">A Visit to the United States of America</h3>
-    <div class="image-card">
+      <h3 class="center-heading text-black mb-4">A Visit to the United States of America (Alternate Gallery)</h3>
+    <div class="image-card usa-alternate-gallery">
       <img src="america/image1.jpeg" alt="Image 1">
       <img src="america/image7.jpeg" alt="Image 2">
       <img src="america/image5.jpeg" alt="Image 3">
       <img src="america/image6.jpeg" alt="Image 4">
       <img src="america/image2.jpeg" alt="Image 5">
       <img src="america/image3.jpeg" alt="Image 6">
-      <img src="image/image4.jpeg" alt="Image 7">
+      <img src="image/image4.jpeg" alt="Image 7"> 
       <img src="image/image8.jpeg" alt="Image 8">
       <img src="image/image11.jpeg" alt="Image 9">
       <img src="image/image12.jpeg" alt="Image 10">
-      <div>
+    </div>
+    <div> 
         <p>
             From October 18 to November 12, 2024, I traveled with Sr. Mary Kannampuzha to the USA. After receiving my visa at the last minute, we flew from Frankfurt to Corpus Christi, Texas. The temperature there was over 30°C, much warmer than France, but our sisters warmly welcomed us and took great care of us. The Corpus Christi community has three sisters who work in a hospital.
         </p>
@@ -428,90 +521,61 @@
 </div>
 
 <div class="site-footer">
-	<div class="container">
-		<div class="row">
-			<div class="col-lg-4">
-				<div class="widget">
-					<h3>About</h3>
-					<p>This website is about the sisters of st.joseph of st.marc and their Charism and Spirituality of living.
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-4">
+                <div class="widget">
+                    <h3>About</h3>
+                    <p>This website is about the sisters of st.joseph of st.marc and their Charism and Spirituality of living.
 
-						.</p>
-				</div> <!-- /.widget -->
-				<div class="widget">
-					<address>22,Avenue Foch,Colmar 68000
-						 <br> France</address>
-					<ul class="list-unstyled links">
-						<li><a href="tel://11234567890">03-89-41-12-67</a></li>
-					<!---	<li><a href="tel://11234567890">+1(123)-456-7890</a></li>-->
-						<li><a href="mailto:info@mydomain.com">sjsmalsace2024@gmail.com</a></li>
-					</ul>
-				</div> <!-- /.widget -->
-			</div> <!-- /.col-lg-4 -->
-			<div class="col-lg-4">
-				<div class="widget">
-					<h3>Company</h3>
-					<ul class="list-unstyled float-start links">
-						<li><a href="#">About us</a></li>
-						<li><a href="#">Blog</a></li>
-						<li><a href="#">Vision</a></li>
-						<li><a href="#">Mission</a></li>
-						<li><a href="#">Terms</a></li>
-						<li><a href="#">Privacy</a></li>
-					</ul>
-					<!--<ul class="list-unstyled float-start links">
-						<li><a href="#">Partners</a></li>
-						<li><a href="#">Business</a></li>
-						<li><a href="#">Careers</a></li>
-						<li><a href="#">Blog</a></li>
-						<li><a href="#">FAQ</a></li>
-						<li><a href="#">Creative</a></li>-->
-					</ul>
-				</div> <!-- /.widget -->
-			</div> <!-- /.col-lg-4 -->
-			<div class="col-lg-4">
-				<div class="widget">
-					<h3>Navigation</h3>
-					<ul class="list-unstyled links mb-4">
-						<li><a href="#">Our Vision</a></li>
-						<li><a href="#">About us</a></li>
-						<li><a href="#">Contact us</a></li>
-					</ul>
+                        .</p>
+                </div> <div class="widget">
+                    <address>22,Avenue Foch,Colmar 68000
+                         <br> France</address>
+                    <ul class="list-unstyled links">
+                        <li><a href="tel://11234567890">03-89-41-12-67</a></li>
+                    <li><a href="mailto:info@mydomain.com">sjsmalsace2024@gmail.com</a></li>
+                    </ul>
+                </div> </div> <div class="col-lg-4">
+                <div class="widget">
+                    <h3>Company</h3>
+                    <ul class="list-unstyled float-start links">
+                        <li><a href="#">About us</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Vision</a></li>
+                        <li><a href="#">Mission</a></li>
+                        <li><a href="#">Terms</a></li>
+                        <li><a href="#">Privacy</a></li>
+                    </ul>
+                    </ul>
+                </div> </div> <div class="col-lg-4">
+                <div class="widget">
+                    <h3>Navigation</h3>
+                    <ul class="list-unstyled links mb-4">
+                        <li><a href="#">Our Vision</a></li>
+                        <li><a href="#">About us</a></li>
+                        <li><a href="#">Contact us</a></li>
+                    </ul>
 
-					<h3>Social</h3>
-					<ul class="list-unstyled social">
-						<li><a href="#"><span class="icon-instagram"></span></a></li>
-						<li><a href="#"><span class="icon-twitter"></span></a></li>
-						<li><a href="#"><span class="icon-facebook"></span></a></li>
-						<li><a href="#"><span class="icon-linkedin"></span></a></li>
-						<li><a href="#"><span class="icon-pinterest"></span></a></li>
-						<li><a href="#"><span class="icon-dribbble"></span></a></li>
-					</ul>
-				</div> <!-- /.widget -->
-			</div> <!-- /.col-lg-4 -->
-		</div> <!-- /.row -->
-
-		<div class="row mt-5">
-			<div class="col-12 text-center">
-					<!-- 
-              **==========
-              NOTE: 
-              Please don't remove this copyright link unless you buy the license here https://untree.co/license/  
-              **==========
-            -->
-
-            <p>Copyright &copy;<script>document.write(new Date().getFullYear());</script>. All Rights Reserved. &mdash; Designed with love by <a href="sajanhenry2005@gmail.com">Sajanhenry</a> Distributed By <a href="">SJSM</a> <!-- License information: https://untree.co/license/ -->
-            </p>
+                    <h3>Social</h3>
+                    <ul class="list-unstyled social">
+                        <li><a href="#"><span class="icon-instagram"></span></a></li>
+                        <li><a href="#"><span class="icon-twitter"></span></a></li>
+                        <li><a href="#"><span class="icon-facebook"></span></a></li>
+                        <li><a href="#"><span class="icon-linkedin"></span></a></li>
+                        <li><a href="#"><span class="icon-pinterest"></span></a></li>
+                        <li><a href="#"><span class="icon-dribbble"></span></a></li>
+                    </ul>
+                </div> </div> </div> <div class="row mt-5">
+            <div class="col-12 text-center">
+                    <p>Copyright &copy;<script>document.write(new Date().getFullYear());</script>. All Rights Reserved. &mdash; Designed with love by <a href="sajanhenry2005@gmail.com">Sajanhenry</a> Distributed By <a href="">SJSM</a> </p>
           </div>
         </div>
-      </div> <!-- /.container -->
-    </div> <!-- /.site-footer -->
-
-    <!-- Preloader -->
-    <div id="overlayer"></div>
+      </div> </div> <div id="overlayer"></div>
     <div class="loader">
-    	<div class="spinner-border text-primary" role="status">
-    		<span class="visually-hidden">Loading...</span>
-    	</div>
+        <div class="spinner-border text-primary" role="status">
+            <span class="visually-hidden">Loading...</span>
+        </div>
     </div>
 
 
