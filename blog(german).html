@@ -1,10 +1,3 @@
-
-<!-- /*
-* Template Name: Financing
-* Template Author: Untree.co
-* Template URI: https://untree.co/
-* License: https://creativecommons.org/licenses/by/3.0/
-*/ -->
 <!doctype html>
 <html lang="en">
 <head>
@@ -33,8 +26,9 @@
 
   <link rel="stylesheet" href="css/flatpickr.min.css">
 
-  <title>SJSM &mdash; Sisters of St.joseph of Saint marc</title>
+  <title>SJSM &mdash; Sisters of St.joseph of Saint mark</title>
   <style>
+    /* === GLOBAL IMAGE CARD STYLES (Existing 5-Column Grid) === */
     .image-card {
       display: flex;
       flex-wrap: wrap;
@@ -47,8 +41,10 @@
 
     .image-card img {
       width: calc(20% - 15px);
-      height: auto;
+      height: 180px; /* Set a consistent height */
+      object-fit: cover; /* Ensure images cover the area */
       margin-bottom: 15px;
+      border-radius: 5px; /* Added border-radius for consistency */
     }
 
     @media (max-width: 992px) {
@@ -68,6 +64,59 @@
         width: calc(100% - 5px);
       }
     }
+    
+    /* === USA GALLERY 1 SPECIFIC STYLES (4-Column Responsive Grid) === */
+    /* This targets the first USA gallery (Generalate Images) to be 4 columns. */
+    .usa-gallery-card {
+        padding: 20px; /* Ensure padding is applied to the card */
+    }
+    .usa-gallery-card img {
+        width: calc(25% - 12px) !important; /* 4 images per row for desktop */
+        height: 200px !important; /* fixed height for all images */
+        object-fit: cover; /* keeps aspect ratio, crops if needed */
+        margin-bottom: 15px;
+        border-radius: 8px; /* Added border-radius for consistency */
+    }
+    
+    /* === USA GALLERY 2 SPECIFIC STYLES (5-Column Responsive Grid) === */
+    /* This targets the second USA gallery (Alternate Gallery) to be 5 columns. */
+    .usa-alternate-gallery {
+        padding: 20px; /* Ensure padding is applied to the card */
+    }
+    .usa-alternate-gallery img {
+        width: calc(20% - 12px) !important; /* 5 images per row for desktop */
+        height: 200px !important; /* fixed height for all images */
+        object-fit: cover; /* keeps aspect ratio, crops if needed */
+        margin-bottom: 15px;
+        border-radius: 8px; /* Added border-radius for consistency */
+    }
+
+    /* Media queries for all USA galleries (3, 2, 1 columns on smaller screens) */
+    @media (max-width: 992px) {
+        .usa-gallery-card img,
+        .usa-alternate-gallery img {
+            width: calc(33.33% - 10px) !important; /* 3 images per row on tablet */
+            height: 180px !important;
+        }
+    }
+
+    @media (max-width: 768px) {
+        .usa-gallery-card img,
+        .usa-alternate-gallery img {
+            width: calc(50% - 7.5px) !important; /* 2 images per row on larger phones */
+            height: 150px !important;
+        }
+    }
+
+    @media (max-width: 576px) {
+        .usa-gallery-card img,
+        .usa-alternate-gallery img {
+            width: calc(100% - 5px) !important; /* 1 image per row on small phones */
+            height: 150px !important;
+        }
+    }
+    /* === END USA GALLERY SPECIFIC STYLES === */
+
 
     .site-nav .menu-bg-wrap {
       background-image: url('');
@@ -81,18 +130,11 @@
       gap: 20px;
     }
 
-   .hero.overlay.inner-page {
-	background: 
-	  linear-gradient(rgba(93, 99, 115, 0.7), rgba(93, 99, 115, 0.7)),
-		url('Saint-Marc + Therese Avila.jpg') no-repeat center center;
-	
-	background-size: cover !important;
-	background-position: center !important;
-	background-repeat: no-repeat !important;
-	width: 100%;
-}
-
-  
+    .hero.overlay.inner-page {
+      background-size: cover;
+      background-position: center;
+      background: linear-gradient(rgba(93, 99, 115, 0.7), rgba(93, 99, 115, 0.7)), url('header.jpg') no-repeat center center;
+    }
 
     .contact-card {
       flex: 1 1 calc(50% - 20px);
@@ -108,7 +150,7 @@
     .hero h1 {
       margin-top: 100px; /* Adjust this value to move the content downwards */
     }
-       .usa-visit-gallery {
+         .usa-visit-gallery {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
     gap: 10px;
@@ -122,18 +164,17 @@
     border-radius: 8px;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
   }
-    
   </style>
 </head>
 <body>
   <div class="site-mobile-menu site-navbar-target">
-		<div class="site-mobile-menu-header">
-			<div class="site-mobile-menu-close">
-				<span class="icofont-close js-menu-toggle"></span>
-			</div>
-		</div>
-		<div class="site-mobile-menu-body"></div>
-	</div>
+     <div class="site-mobile-menu-header">
+    <div class="site-mobile-menu-close">
+       <span class="icofont-close js-menu-toggle"></span>
+        </div>
+      </div>
+     <div class="site-mobile-menu-body"></div>
+    </div>
   <nav class="site-nav">
     <div class="container">
       <div class="menu-bg-wrap">
@@ -144,16 +185,16 @@
             </div>
             <div class="col-8 text-center">
               <ul class="js-clone-nav d-none d-lg-inline-block text-start site-menu mx-auto">
-                <li><a href="index(german).html">Home</a></li>
-                <li class="active"><a href="about(german).html">About</a></li>
-                <li><a href="blog(german).html">Blog</a></li>
+                <li><a href="index(french).html">Home</a></li>
+                <li class="active"><a href="about(french).html">About</a></li>
+                <li><a href="blog(french).html">Blog</a></li>
                 <li class="has-children">
                   <a href="#">Pages</a>
                   <ul class="dropdown">
-                    <li><a href="single(german).html">Formation</a></li>
-                    <li><a href="case-study(german).html">Spiritual insights</a></li>
+                    <li><a href="single(french).html">Formation</a></li>
+                    <li><a href="case-study(french).html">Spiritual insights</a></li>
                     <li class="has-children">
-                      <a href="index(german).html">language(GER)</a>
+                      <a href="index(french).html">language(FRE)</a>
                       <ul class="dropdown">
                         <li><a href="index.html">English</a></li>
                         <li><a href="index(french).html">French</a></li>
@@ -162,7 +203,7 @@
                     </li>
                   </ul>
                 </li>
-                <li><a href="contact(german).html">Contact Us</a></li>
+                <li><a href="contact(french).html">Contact Us</a></li>
               </ul>
             </div>
             <div class="col-2 text-end">
@@ -180,37 +221,32 @@
     </div>
   </nav>
 
-
   <div class="hero overlay inner-page">
    
     <div class="row align-items-center justify-content-center text-center pt-5">
       <div class="col-lg-6"></div>
       <div class="center-heading">
-        <h1 class="row align-items-center justify-content-center text-center pt-5 text-white">Blog/Neuigkeiten</h1>
+        <h1 class="row align-items-center justify-content-center text-center pt-5 text-white">Blog/Actualités</h1>
       </div>
     </div>
   </div>
-
+  
   <div class="section">
     <div class="container article">
       <div class="row justify-content-center align-items-stretch">
       
         <article class="col-lg-8 order-lg-2 px-lg-5">
-            <h3>Das 34. Generalkapitel</h3>
-            <p>Das 34. Generalkapitel der Kongregation der SJSM fand vom 1. bis 13. Mai 2024 in Saint-Marc, Frankreich, statt. Es nahmen 40 delegierte Schwestern aus verschiedenen Teilen der Welt teil.</p>
-            
-            <img src="100.jpg" alt="Image" class="img-fluid rounded">
-            
-            <h3>"Das 34. Generalkapitel der SJSM endet in Frankreich mit neuer Führung und erneuerter Mission"</h3>
-            <p>Das 34. Generalkapitel der Kongregation der Schwestern von Saint Joseph von Saint-Marc (SJSM) fand vom 1. bis 13. Mai 2024 in Saint-Marc, Frankreich, statt. An dieser wichtigen Veranstaltung nahmen vierzig delegierte Schwestern teil, die zwei indische Provinzen, die deutsche Provinz, die französische Provinz, die Region Ukraine, die USA, die Philippinen und Italien vertraten. Im Mittelpunkt des Kapitels standen die Diskussion über zukünftige Ausrichtungen der Kongregation, die Bewertung vergangener Erfolge und das Setzen neuer Ziele für ihre Mission.</p>
-            
-            <p>Das Kapitel war eine Zeit der tiefen Reflexion, Diskussion und Entscheidungsfindung, die sich auf die zukünftigen Ausrichtungen und die Führung der Kongregation konzentrierte. Während dieses Kapitels wurde Sr. Shobha Stanly zur neuen Generaloberin der Kongregation gewählt. Ihre Wahl markiert ein neues Kapitel in der Führung der Kongregation, das Kontinuität und neue Initiativen in ihrer Mission und ihrem Dienst verspricht.</p>
-            
-            <h3>"Neue Führung und globale Repräsentation prägen das 34. Generalkapitel der SJSM"</h3>
-            <p>Der Generalrat wurde mit der Wahl von vier Generalrätinnen gebildet, die Sr. Shobha Stanly bei ihren Aufgaben unterstützen werden. Diese Rätinnen umfassen Sr. Marie Therese Frie aus der deutschen Provinz, die reichlich Erfahrung aus Europa mitbringt; Sr. Mary Kannampuzha aus der Sanjo-Provinz in Vengoor, die den indischen Subkontinent mit seinem reichen kulturellen Erbe vertritt; Sr. Daniele Vetter aus der französischen Provinz, die eine tiefe Verbindung zu den Wurzeln der Kongregation hat; und Sr. Ligy Payyappilly aus der Region Ukraine, die Perspektiven aus einer Region bietet, die vor erheblichen Herausforderungen und Veränderungen steht.</p>
-            
-            <p>Die Anwesenheit und Teilnahme dieser Schwestern aus verschiedenen Teilen der Welt unterstreicht das Engagement der Kongregation für globale Solidarität, Einheit in Vielfalt und gemeinsame Mission. Die Diskussionen und Beschlüsse dieses Generalkapitels sollen die Aktivitäten und das geistliche Leben der Kongregation in den kommenden Jahren inspirieren und leiten, damit sie weiterhin ihr Charisma des Dienstes und der Hingabe an die Lehren des heiligen Joseph und ihre Gründungsprinzipien leben können.</p>
-            
+    <h3>Le 34e Chapitre Général</h3>
+    <p>Le 34e Chapitre Général de la Congrégation de SJSM s'est tenu à Saint-Marc en France du 01 au 13 mai 2024. Quarante sœurs déléguées représentant différentes parties du monde y ont participé.</p>
+
+          <img src="100.jpg" alt="Image" class="img-fluid rounded">
+
+      <h3>"Le 34e Chapitre Général de SJSM se conclut en France avec une nouvelle direction et une mission renouvelée"</h3>
+          <p>Le 34e Chapitre Général de la Congrégation des Sœurs de Saint Joseph de Saint-Marc (SJSM) a eu lieu à Saint-Marc en France du 01 au 13 mai 2024. Cet événement important a vu la participation de quarante sœurs déléguées, représentant deux provinces indiennes, la province allemande, la province française, la région d'Ukraine, les États-Unis, les Philippines et l'Italie. Le chapitre a mis l'accent sur la discussion des futures orientations de la Congrégation, l'évaluation des réalisations passées et la définition de nouveaux objectifs pour leur mission.</p>
+          <p>Le Chapitre a été un temps de réflexion profonde, de discussion et de prise de décision, centré sur les orientations futures et la direction de la Congrégation. C'est au cours de ce Chapitre que Sr. Shobha Stanly a été élue nouvelle Supérieure Générale de la Congrégation. Son élection marque un nouveau chapitre dans la direction de la Congrégation, promettant continuité et nouvelles initiatives dans leur mission et leur ministère.</p>
+          <h3>"Nouvelle direction et représentation mondiale marquent le 34e Chapitre Général de SJSM"</h3>
+          <p>Le Conseil Général a été formé avec l'élection de quatre Conseillères Générales qui assisteront Sr. Shobha Stanly dans ses fonctions. Ces Conseillères incluent Sr. Marie Therese Frie de la province allemande, qui apporte une grande expérience de l'Europe; Sr. Mary Kannampuzha de la province de Sanjo à Vengoor, représentant le sous-continent indien avec sa riche héritage culturel; Sr. Daniele Vetter de la province française, qui offre une connexion profonde avec les racines de la Congrégation; et Sr. Ligy Payyappilly de la région d'Ukraine, offrant des perspectives d'une région faisant face à des défis et des transformations significatives.</p>
+          <p>La présence et la participation de ces sœurs provenant de diverses parties du monde soulignent l'engagement de la Congrégation envers la solidarité mondiale, l'unité dans la diversité et la mission partagée. Les discussions et les résolutions de ce Chapitre Général devraient inspirer et guider les membres de la Congrégation dans leurs efforts pour répondre aux besoins de leur temps avec compassion, foi et un sens renouvelé de service.</p>
         </article>
 
         <div class="col-md-12 col-lg-1 order-lg-1">
@@ -234,8 +270,10 @@
 
           <div class="share floating-block sticky-top">
 
-            <h2 class="mb-3 text-black">SJSM 34. Generalkapitel</h2>
-            <p>Das obige Video handelt vom 34. Generalkapitel der Kongregation SJSM, das vom 01. bis 13. Mai 2024 in Saint-Marc in Frankreich stattfand.</p>
+            <h2 class="mb-3 text-black">SJSM 34th General Chapitre</h2>
+      <p>La vidéo ci-dessus concerne le 34e Chapitre Général de la Congrégation de SJSM qui s'est tenu à Saint-Marc en France du 1er au 13 mai 2024.</p>
+
+           
           </div>
         </div>
       </div>
@@ -252,6 +290,50 @@
     }
 </style>
 
+<div class="section sec-news">
+  <div class="container">
+    <div class="card-body text-center">
+      <h3 class="center-heading text-black mb-4">INFORMATIONS DU GÉNÉRALAT – 2025</h3>
+    <div class="image-card usa-gallery-card">
+      <img src="generalate/image1.jpeg" alt="Image 1">
+      <img src="generalate/image2.png" alt="Image 2">
+      <img src="generalate/image12.jpeg" alt="Image 3">
+      <img src="generalate/image14.jpeg" alt="Image 4">
+      <img src="generalate/image15.jpeg" alt="Image 5">
+      <img src="generalate/image6.jpeg" alt="">
+      <img src="generalate/image7.jpeg" alt="">
+      <img src="generalate/image24.jpeg" alt="">
+      <img src="generalate/image17.jpeg" alt="Image 7">
+      <img src="generalate/image21.jpeg" alt="Image 8">
+      <img src="generalate/image5.jpeg" alt="Image 9">
+      <img src="generalate/image9.jpeg" alt="Image 10">
+    </div>
+    <div>
+      <p> <b>Réflexion Spirituelle & Message Central</p></b>
+L'année 2025, avec tous ses "hauts et bas, moments de joies, de peines, de stress, de bonne santé et de maladie," nous amène à la profonde réalisation de Sainte Thérèse d'Avila : **"Dieu seul suffit !"** Cette vérité nous guide à travers tous les moments, lumineux et sombres, vers la "miséricorde et l'amour majestueux" de Dieu.
+<br>
+---
+
+<b>Missions de la Généralat et Vie Communautaire en 2025</b> 
+
+L'année 2025 a été marquée par de nombreux voyages mondiaux et d'importantes étapes spirituelles et administratives pour les Sœurs de Saint-Joseph de Saint-Marc.
+
+**Rayonnement Mondial :** La Supérieure Générale Sr. Shobha Stanly et la Conseillère Générale Sr. Ligy Payyappilly ont passé trois mois (du 2 janvier au 28 mars) lors d'une vaste visite à travers l'**Inde**, atteignant 36 communautés dans les deux provinces et assistant aux Engagements Définitifs de plusieurs sœurs. Le Généralat a également élargi ses racines lorsque Sr. Danièle Vetter et Sr. Sheeba Thomas se sont rendues à **Madagascar** en mars pour bénir et inaugurer le premier couvent de la Congrégation sur place. Plus tard dans l'année (du 5 au 20 août), Sr. Marie-Therese Frie et Sr. Ligy Payyappilly ont effectué leur première visite dans les communautés florissantes des **Philippines**. 
+
+**Gouvernance de la Congrégation :** Un moment crucial a eu lieu en mai lorsque Sr. Shobha Stanly a participé à la **Conférence de l'UISG** à **Rome**, un rassemblement important des Supérieures Générales. Durant sa visite, elle a été témoin de l'élection historique du **Nouveau Pape Léon XIV** le 8 mai, confirmant la foi vibrante de l'Église mondiale. Sur le plan administratif, la **Rencontre des Conseils Européens** s'est tenue à Saint-Marc (22 – 23 mai) pour aborder les questions urgentes de la vie religieuse en Europe.
+
+**Étapes Spirituelles et Administratives :** L'année a été ponctuée de joyeuses célébrations comme l'**Engagement Définitif de Sr. Tavika en Ukraine** (6 septembre) et la visite de l'Archevêque Stephan Burger à la Maison Provinciale de St. Trudpert en novembre pour la Fête du Christ Roi. Personnellement, il y a eu de la joie lorsque Sr. Mary Kannampuzha a réussi son examen de conduite et obtenu son **permis de conduire européen** (27 octobre). La Congrégation a également célébré la sortie du livre de Sr. Ligy Payyappilly, **"Appelée en Ukraine"**, en janvier, et ses deux semaines consacrées à la prédication des Écritures en **Espagne** en septembre, une merveilleuse contribution à la diffusion de la Bonne Nouvelle.
+
+
+    </p>
+      <p>
+            <strong>Sr. Shobha Stanly,<br>
+            Supérieure Générale SJSM</strong>
+        </p>
+    </div>
+  </div>
+</div>
+</div>
 <div class="container mt-5">
     <div class="row justify-content-center align-items-stretch">
         <div class="col-md-12">
@@ -259,7 +341,7 @@
                 <div class="card-body">
                     <div class="row">
                         <div class="center-container text-black">
-                            <h3 class="center-heading">Mission in Madagaskar</h3>
+                            <h3 class="center-heading">Mission à Madagascar</h3>
                         </div>
                         <div class="col-12 col-md-4 mb-3 mb-md-0">
                             <img src="887 (1).jpg" alt="Image 1" class="img-fluid custom-img">
@@ -270,14 +352,11 @@
                         <div class="col-12 col-md-4 mb-3 mb-md-0">
                             <img src="2439.jpg" alt="Image 3" class="img-fluid custom-img">
                         </div><br>
-                       
-                       
                     </div>
-                     <div class="center-container text-black ">
-                        <h3 class="center-heading">Mission nach Madagaskar: Bedarfsanalyse und Aufbau von Gemeinschaftsverbindungen</h3>
+                    <div class="center-container text-black">
+                        <h3 class="center-heading">Mission à Madagascar : Évaluer les besoins et établir des liens communautaires</h3>
                     </div>
-                    <p class="mt-3">Vom 11. bis 18. Oktober begaben sich Sr. Sheeba Thomas, Sr. Chimene und Sr. Shobha Stanly auf eine Mission nach Madagaskar, die mit der Gründerwoche ihrer Kongregation zusammenfiel. Trotz anfänglicher Herausforderungen, einschließlich des verlorenen Reisepasses von Sr. Shobha, ging ihre Reise mit göttlicher Hilfe weiter. Bei ihrer Ankunft in Antananarivo wurden sie herzlich von Sr. Miriam vom Heiligen Herzen von Ragusa empfangen. Ihre Mission führte sie in verschiedene Städte, darunter Diego und Daraina, wo sie von den lokalen Gemeinschaften mit Begeisterung, Gesang und Tanz empfangen wurden. Sie erkundeten die Möglichkeit, ein neues Kloster zu gründen, unterstützt vom örtlichen Bischof Marc Benjamin und Herrn Merenti, der Land für diesen Zweck anbot. In Vohemar erlebten sie den lebendigen Glauben von über 1000 Schülern und Dorfbewohnern, der in einer Anbetung des Allerheiligsten Sakraments gipfelte. Die Delegation nahm auch an einer Heiligen Messe und einer Firmungszeremonie für 62 Kinder und Erwachsene teil. Während ihres Besuchs beobachteten sie die natürliche Schönheit und reichen Ressourcen Madagaskars sowie die erheblichen sozialen und wirtschaftlichen Herausforderungen der lokalen Bevölkerung. Diese Mission unterstrich ihr Engagement, den Menschen in Madagaskar zu helfen, Entwicklung und Fortschritt zu erreichen, und ermutigte die Schwestern, dem Ruf des Heiligen Geistes zu folgen und zeitgenössische Probleme mit erneuter Hingabe anzugehen.
-                    </p>
+                    <p class="mt-3">Du 11 au 18 octobre, Sr. Sheeba Thomas, Sr. Chimene et Sr. Shobha Stanly ont entrepris une mission à Madagascar, coïncidant avec la semaine du Fondateur de leur Congrégation. Malgré des défis initiaux, notamment la perte du passeport de Sr. Shobha, leur voyage s'est poursuivi avec une assistance divine. À leur arrivée à Antananarivo, elles ont été chaleureusement accueillies par Sr. Miriam du Sacré-Cœur de Ragusa. Leur mission les a conduites dans diverses villes, dont Diego et Daraina, où elles ont été accueillies avec enthousiasme, chants et danses par les communautés locales. Elles ont exploré le potentiel d'établissement d'un nouveau couvent, soutenues par l'évêque local Marc Benjamin et M. Merenti, qui ont offert des terrains à cette fin. À Vohemar, elles ont été témoins de la foi vibrante de plus de 1000 étudiants et villageois, culminant par une Adoration du Saint-Sacrement. La délégation a également participé à une Eucharistie et à une cérémonie de Confirmation pour 62 enfants et adultes. Tout au long de leur visite, elles ont observé la beauté naturelle et les riches ressources de Madagascar, ainsi que les défis sociaux et économiques significatifs auxquels la population locale est confrontée. Cette mission a souligné leur engagement à aider le peuple malgache à réaliser son développement et son progrès tout en encourageant les sœurs à répondre à l'appel du Saint-Esprit pour aborder les questions contemporaines avec un dévouement renouvelé.</p>
                 </div>
             </div>
         </div>
@@ -290,7 +369,7 @@
                 <div class="card-body">
                     <div class="row">
                         <div class="center-container text-black">
-                            <h3 class="center-heading">Gemeinschaften auf den Philippinen: Eine wachsende Präsenz seit 2008</h3>
+                            <h3 class="center-heading">Communautés aux Philippines : Une présence croissante depuis 2008</h3>
                         </div>
                         <div class="col-12 col-md-4 mb-3 mb-md-0">
                             <img src="philippian1.jpg" alt="Image 1" class="img-fluid custom-img">
@@ -301,28 +380,27 @@
                         <div class="col-12 col-md-4 mb-3 mb-md-0">
                             <img src="phillipian2.jpg" alt="Image 3" class="img-fluid custom-img">
                         </div><br>
-                       
-                       
                     </div>
-                     <div class="center-container text-black "><br>
-                      <h3 class="center-heading"> </h3>
-                  </div>
-                  <p class="mt-3">Im Jahr 2008 erweiterte die Kongregation der SJSM ihre Mission und gründete Gemeinschaften auf den Philippinen, was einen bedeutenden Meilenstein in unserer Reise markierte. Die Entscheidung, unsere Reichweite auf dieses lebendige und vielfältige Land auszudehnen, wurde von der Vision getragen, unser Charisma der Anbetung und des Dienstes, verwurzelt in der eucharistischen Spiritualität, mit mehr Menschen zu teilen.
+                    <div class="center-container text-black"><br>
+                        <h3 class="center-heading"></h3>
+                    </div>
+                    <p class="mt-3">En 2008, la Congrégation des SJSM a élargi sa mission et établi des communautés aux Philippines, marquant une étape importante dans notre parcours. La décision d'étendre notre portée à ce pays vibrant et diversifié a été motivée par une vision de partager notre Charisme d'Adoration et de Service, enraciné dans la Spiritualité Eucharistique, avec davantage de personnes.
 
-                    Derzeit haben wir zwei blühende Gemeinschaften, die sich auf verschiedenen Inseln befinden. Eine Gemeinschaft befindet sich in Cavite City, in der Nähe der pulsierenden Hauptstadt Manila. Cavite City bietet eine dynamische Umgebung, in der unsere Schwestern in verschiedenen Diensten tätig sind und sich mit Mitgefühl und Hingabe an die lokale Bevölkerung wenden. Diese Gemeinschaft ist für viele Einwohner zu einem Leuchtturm der Hoffnung und geistigen Bereicherung geworden.
-                    
-                    Die andere Gemeinschaft befindet sich in San Carlos, einem weiteren wichtigen Gebiet auf den Philippinen. Diese Gemeinschaft spielt ebenfalls eine entscheidende Rolle bei der spirituellen und sozialen Entwicklung der Region, indem sie ein Gefühl der Zugehörigkeit und Unterstützung unter den lokalen Menschen fördert. Die Schwestern hier arbeiten unermüdlich daran, die Werte unserer Kongregation zu verkörpern und einen spürbaren Unterschied im Leben der Menschen zu machen, die sie berühren.
-                    
-                    Ein besonders inspirierender Aspekt unserer Mission auf den Philippinen ist das wachsende Interesse junger Mädchen, unserer Kongregation beizutreten. Viele fühlen sich von unserer Lebensweise angezogen und sind motiviert, das Charisma der Anbetung und des Dienstes zu leben. Diese jungen Aspirantinnen sind bereit, die eucharistische Spiritualität, die unsere Kongregation definiert, anzunehmen und sich einem Leben des Gebets, des Dienstes und des gemeinschaftlichen Lebens zu widmen.
-                    
-                    Die Gründung dieser Gemeinschaften hat nicht nur unsere geografische Reichweite erweitert, sondern auch unsere Kongregation mit der kulturellen Vielfalt und dem lebendigen Geist des philippinischen Volkes bereichert. Während wir diese Gemeinschaften weiterhin pflegen und unterstützen, bleiben wir unserer Mission verpflichtet, Liebe, Glauben und Dienst auf den Philippinen und darüber hinaus zu verbreiten.
-                    
-                    Zusammenfassend lässt sich sagen, dass unsere Gemeinschaften auf den Philippinen florierende Zentren des spirituellen Wachstums und des Dienstes sind. Die Hingabe unserer Schwestern und die begeisterte Reaktion junger Aspirantinnen unterstreichen die bedeutende Präsenz unserer Kongregation in diesem wunderschönen Land. Wir freuen uns auf weiteres Wachstum und eine tiefere Zusammenarbeit mit der philippinischen Gemeinschaft, um eine Zukunft voller Hoffnung und Glauben zu fördern.</p>
+                    Actuellement, nous avons deux communautés florissantes situées sur différentes îles. Une communauté est située à Cavite City, à proximité de la capitale animée, Manille. Cavite City offre un environnement dynamique où nos sœurs s'engagent dans divers ministères, tendant la main à la population locale avec compassion et dévouement. Cette communauté est devenue un phare d'espoir et d'enrichissement spirituel pour de nombreux résidents.
+
+                    L'autre communauté est située à San Carlos, une autre région importante des Philippines. Cette communauté joue également un rôle crucial dans le développement spirituel et social de la région, favorisant un sentiment d'appartenance et de soutien parmi la population locale. Les sœurs y travaillent sans relâche pour incarner les valeurs de notre Congrégation, faisant une différence tangible dans la vie des personnes qu'elles touchent.
+
+                    L'un des aspects les plus inspirants de notre mission aux Philippines est l'intérêt croissant des jeunes filles à rejoindre notre Congrégation. Beaucoup sont attirées par notre mode de vie, motivées par le désir de vivre le Charisme d'Adoration et de Service. Ces jeunes aspirantes sont désireuses d'embrasser la Spiritualité Eucharistique qui définit notre Congrégation, s'engageant dans une vie de prière, de service et de vie communautaire.
+
+                    L'établissement de ces communautés a non seulement élargi notre portée géographique mais a également enrichi notre Congrégation par la diversité culturelle et l'esprit vibrant du peuple philippin. Alors que nous continuons à nourrir et soutenir ces communautés, nous restons engagés dans notre mission de répandre l'amour, la foi et le service à travers les Philippines et au-delà.<br>
+
+                    En résumé, nos communautés aux Philippines sont des centres florissants de croissance spirituelle et de service. Le dévouement de nos sœurs et la réponse enthousiaste des jeunes aspirantes soulignent la présence impactante de notre Congrégation dans ce beau pays. Nous attendons avec impatience une croissance continue et un engagement plus profond avec la communauté philippine, favorisant un avenir rempli d'espoir et de foi.</p>
+                </div>
             </div>
         </div>
     </div>
 </div>
-	
+
 </div>
 <div class="container mt-5">
   <div class="row justify-content-center align-items-stretch">
@@ -348,19 +426,20 @@
   <div class="container">
     <div class="card-body text-center">
       <h3 class="center-heading text-black mb-4">Ein Besuch in den Vereinigten Staaten von Amerika</h3>
-    <div class="image-card">
+    <div class="image-card usa-alternate-gallery">
       <img src="america/image1.jpeg" alt="Image 1">
       <img src="america/image7.jpeg" alt="Image 2">
       <img src="america/image5.jpeg" alt="Image 3">
       <img src="america/image6.jpeg" alt="Image 4">
       <img src="america/image2.jpeg" alt="Image 5">
       <img src="america/image3.jpeg" alt="Image 6">
-      <img src="image/image4.jpeg" alt="Image 7">
+      <img src="image/image4.jpeg" alt="Image 7"> 
       <img src="image/image8.jpeg" alt="Image 8">
       <img src="image/image11.jpeg" alt="Image 9">
       <img src="image/image12.jpeg" alt="Image 10">
-      <div>
-        <p>
+    </div>
+    <div> 
+         <p>
             Vom 18. Oktober bis 12. November 2024 reiste ich zusammen mit Schwester Mary Kannampuzha in die USA. Nach Erhalt meines Visums in letzter Minute flogen wir von Frankfurt nach Corpus Christi, Texas, wo die Temperaturen über 30°C lagen – ein starker Kontrast zu den 16-18°C in Frankreich. Trotz der klimatischen Umstellung wurden wir herzlich empfangen und gut umsorgt. Die Gemeinschaft in Corpus Christi besteht aus drei Schwestern, die alle in einem Krankenhaus arbeiten.
         </p>
         <p>
@@ -375,19 +454,16 @@
         </p>
     </div>
     
-    
     </div>
   </div>
   </div>
 </div>
-
-
 <div class="section sec-news">
   <div class="container">
     <div class="card-body text-center">
       <h3 class="center-heading text-black mb-4">Einblicke in den Indienbesuch</h3>
 
-      <!-- Image Grid ONLY for USA Visit -->
+     
       <div class="usa-visit-gallery">
         <img src="indianvisit/WhatsApp Image 2025-04-04 at 11.11.34 (1).jpeg" alt="">
         <img src="indianvisit/WhatsApp Image 2025-04-04 at 11.11.34 (2).jpeg" alt="">
@@ -419,110 +495,75 @@
         <img src="indianvisit/WhatsApp Image 2025-04-04 at 11.11.39 (3).jpeg" alt="">
         <img src="indianvisit/WhatsApp Image 2025-04-04 at 11.11.39.jpeg" alt="">
       </div>
-
-
-    
     </div>
   </div>
 </div>
-
-
 <div class="site-footer">
-	<div class="container">
-		<div class="row">
-			<div class="col-lg-4">
-				<div class="widget">
-					<h3>Über uns</h3>
-					<p>Diese Website handelt von den Schwestern von St. Joseph von St. Marc und ihrem Charisma und ihrer Spiritualität des Lebens.</p>
-				</div> <!-- /.widget -->
-				<div class="widget">
-					<address>22, Avenue Foch, Colmar 68000
-						 <br> Frankreich</address>
-					<ul class="list-unstyled links">
-						<li><a href="tel://11234567890">03-89-41-12-67</a></li>
-						<!---<li><a href="tel://11234567890">+1(123)-456-7890</a></li>-->
-						<li><a href="mailto:info@mydomain.com">sjsmalsace2024@gmail.com</a></li>
-					</ul>
-				</div> <!-- /.widget -->
-			</div> <!-- /.col-lg-4 -->
-			<div class="col-lg-4">
-				<div class="widget">
-					<h3>Firma</h3>
-					<ul class="list-unstyled float-start links">
-						<li><a href="#">Über uns</a></li>
-						<li><a href="#">Blog</a></li>
-						<li><a href="#">Vision</a></li>
-						<li><a href="#">Mission</a></li>
-						<li><a href="#">AGB</a></li>
-						<li><a href="#">Datenschutz</a></li>
-					</ul>
-					<!--<ul class="list-unstyled float-start links">
-						<li><a href="#">Partner</a></li>
-						<li><a href="#">Business</a></li>
-						<li><a href="#">Karriere</a></li>
-						<li><a href="#">Blog</a></li>
-						<li><a href="#">FAQ</a></li>
-						<li><a href="#">Kreativ</a></li>-->
-					</ul>
-				</div> <!-- /.widget -->
-			</div> <!-- /.col-lg-4 -->
-			<div class="col-lg-4">
-				<div class="widget">
-					<h3>Navigation</h3>
-					<ul class="list-unstyled links mb-4">
-						<li><a href="#">Unsere Vision</a></li>
-						<li><a href="#">Über uns</a></li>
-						<li><a href="#">Kontakt</a></li>
-					</ul>
+  <div class="container">
+      <div class="row">
+          <div class="col-lg-4">
+              <div class="widget">
+                  <h3>À propos</h3>
+                  <p>Ce site concerne les sœurs de Saint-Joseph de Saint-Marc et leur charisme et spiritualité de vie.</p>
+              </div> <div class="widget">
+                  <address>22, Avenue Foch, Colmar 68000
+                      <br> France</address>
+                  <ul class="list-unstyled links">
+                      <li><a href="tel://11234567890">03-89-41-12-67</a></li>
+                      <li><a href="mailto:info@mydomain.com">sjsmalsace2024@gmail.com</a></li>
+                  </ul>
+              </div> </div> <div class="col-lg-4">
+              <div class="widget">
+                  <h3>Entreprise</h3>
+                  <ul class="list-unstyled float-start links">
+                      <li><a href="#">À propos de nous</a></li>
+                      <li><a href="#">Blog</a></li>
+                      <li><a href="#">Vision</a></li>
+                      <li><a href="#">Mission</a></li>
+                      <li><a href="#">Conditions</a></li>
+                      <li><a href="#">Confidentialité</a></li>
+                  </ul>
+                  </ul>
+              </div> </div> <div class="col-lg-4">
+              <div class="widget">
+                  <h3>Navigation</h3>
+                  <ul class="list-unstyled links mb-4">
+                      <li><a href="#">Notre Vision</a></li>
+                      <li><a href="#">À propos de nous</a></li>
+                      <li><a href="#">Contactez-nous</a></li>
+                  </ul>
 
-					<h3>Soziale Medien</h3>
-					<ul class="list-unstyled social">
-						<li><a href="#"><span class="icon-instagram"></span></a></li>
-						<li><a href="#"><span class="icon-twitter"></span></a></li>
-						<li><a href="#"><span class="icon-facebook"></span></a></li>
-						<li><a href="#"><span class="icon-linkedin"></span></a></li>
-						<li><a href="#"><span class="icon-pinterest"></span></a></li>
-						<li><a href="#"><span class="icon-dribbble"></span></a></li>
-					</ul>
-				</div> <!-- /.widget -->
-			</div> <!-- /.col-lg-4 -->
-		</div> <!-- /.row -->
-
-		<div class="row mt-5">
-			<div class="col-12 text-center">
-					<!-- 
-              **==========
-              HINWEIS: 
-              Bitte entfernen Sie diesen Copyright-Link nicht, es sei denn, Sie kaufen die Lizenz hier https://untree.co/license/  
-              **==========
-            -->
-
-            <p>Copyright &copy;<script>document.write(new Date().getFullYear());</script>. Alle Rechte vorbehalten. &mdash; Mit Liebe entworfen von <a href="sajanhenry2005@gmail.com">Sajanhenry</a> Verbreitet von <a href="">SJSM</a> <!-- Lizenzinformationen: https://untree.co/license/ -->
-            </p>
+                  <h3>Réseaux sociaux</h3>
+                  <ul class="list-unstyled social">
+                      <li><a href="#"><span class="icon-instagram"></span></a></li>
+                      <li><a href="#"><span class="icon-twitter"></span></a></li>
+                      <li><a href="#"><span class="icon-facebook"></span></a></li>
+                      <li><a href="#"><span class="icon-linkedin"></span></a></li>
+                      <li><a href="#"><span class="icon-pinterest"></span></a></li>
+                      <li><a href="#"><span class="icon-dribbble"></span></a></li>
+                  </ul>
+              </div> </div> </div> <div class="row mt-5">
+          <div class="col-12 text-center">
+              <p>Copyright &copy;<script>document.write(new Date().getFullYear());</script>. Tous droits réservés. &mdash; Conçu avec amour par <a href="sajanhenry2005@gmail.com">Sajanhenry</a> Distribué par <a href="">SJSM</a> </p>
           </div>
-        </div>
-      </div> <!-- /.container -->
-    </div> <!-- /.site-footer -->
+      </div>
+  </div> </div> <div id="overlayer"></div>
+<div class="loader">
+  <div class="spinner-border text-primary" role="status">
+      <span class="visually-hidden">Chargement...</span>
+  </div>
+</div>
 
-    <!-- Preloader -->
-    <div id="overlayer"></div>
-    <div class="loader">
-    	<div class="spinner-border text-primary" role="status">
-    		<span class="visually-hidden">Wird geladen...</span>
-    	</div>
-    </div>
+<script src="js/bootstrap.bundle.min.js"></script>
+<script src="js/tiny-slider.js"></script>
 
-
-    <script src="js/bootstrap.bundle.min.js"></script>
-    <script src="js/tiny-slider.js"></script>
-
-    <script src="js/flatpickr.min.js"></script>
+<script src="js/flatpickr.min.js"></script>
 
 
-    <script src="js/aos.js"></script>
-    <script src="js/glightbox.min.js"></script>
-    <script src="js/navbar.js"></script>
-    <script src="js/counter.js"></script>
-    <script src="js/custom.js"></script>
-  </body>
-  </html>
+<script src="js/aos.js"></script>
+<script src="js/glightbox.min.js"></script>
+<script src="js/navbar.js"></script>
+<script src="js/counter.js"></script>
+<script src="js/custom.js"></script>
+</body>
+</html>
