@@ -170,6 +170,51 @@
     border-radius: 8px;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
   }
+  
+  /* Custom image and card styles for inserted sections */
+  .custom-img {
+    width: 100%;
+    height: 260px;
+    object-fit: cover;
+    border-radius: 8px;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.06);
+  }
+
+  .custom-card {
+    border-radius: 12px;
+    border: 1px solid #f0f0f0;
+    box-shadow: 0 6px 30px rgba(0,0,0,0.04);
+  }
+
+  .center-heading h3, .center-heading {
+    font-size: 1.45rem;
+    font-weight: 700;
+    color: #111;
+  }
+
+  .section .divider {
+    height: 1px;
+    background: #eee;
+    margin: 1.6rem 0;
+    border-radius: 2px;
+  }
+  
+  /* Styling for the 34th General Chapter to stand out */
+  .chapter-article {
+    background: linear-gradient(180deg, #fffef8 0%, #ffffff 100%);
+    border-left: 6px solid #f0ad4e;
+    padding: 1.6rem 1.25rem;
+    border-radius: 10px;
+    box-shadow: 0 8px 30px rgba(0,0,0,0.04);
+  }
+
+  .chapter-article h3 {
+    color: #b45309; /* warm accent */
+    font-weight: 800;
+  }
+  .chapter-article h3.chapter-subtitle-black {
+    color: #000 !important;
+  }
   </style>
 </head>
 <body>
@@ -241,22 +286,109 @@
 
   <div class="section">
     <div class="container article">
-      <div class="row justify-content-center align-items-stretch">
-      
-        <article class="col-lg-8 order-lg-2 px-lg-5">
-       <h3>The 34th General Chapter</h3>
+        <div class="row justify-content-center align-items-stretch">
+
+        <!-- USA Silver Jubilee Section (improved layout) + Ukraine teaser column -->
+        <div class="col-12 col-lg-8" id="usa-jubilee">
+          <div class="card custom-card mb-4">
+            <div class="card-body">
+              <div class="row align-items-center">
+                <div class="col-12 text-center mb-3">
+                  <h3 class="center-heading">Celebrating 25 Years’ Presence of SJSM in USA</h3>
+                </div>
+                <div class="col-12 col-md-4 mb-3">
+                  <img src="./homepage/image1.jpeg" alt="USA Jubilee Image 1" class="custom-img">
+                </div>
+                <div class="col-12 col-md-4 mb-3">
+                  <img src="./homepage/image2.jpeg" alt="USA Jubilee Image 2" class="custom-img">
+                </div>
+                <div class="col-12 col-md-4 mb-3">
+                  <img src="./homepage/image3.jpeg" alt="USA Jubilee Image 3" class="custom-img">
+                </div>
+                <div class="col-12 mt-3">
+                  <p>Sisters from Sanjo Province, Vengoor render their service in Homes for the Aged and hospitals in New York, Ohio and North Carolina. Their service in the institutes and the parishes are well appreciated. Hearty congratulations dear sisters for your commitment and faithfulness in following Jesus and living the Charism and spirituality of our Congregation!</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        
+        <div class="col-12 col-lg-4" id="ukraine-testimony">
+          <div class="card custom-card mb-4">
+            <div class="card-body">
+              <div class="text-center mb-2">
+                <h4 class="center-heading">About the 34th General Chapter</h4>
+              </div>
+              <div class="row g-2">
+                <img src="100.jpg" alt="34th Chapter" class="img-fluid rounded mb-2" style="height:120px; object-fit:cover;">
+              </div>
+              <div class="mt-3" style="color:#666; line-height:1.5;">
+                <p class="small">The 34th General Chapter of the Congregation of SJSM was held at Saint-Marc in France from May 01 to May 13, 2024. There were 40 delegated sisters representing the Indian, German, French, Ukraine, USA, Philippines, and Italian regions.</p>
+                <p class="small">During the Chapter, Sr. Shobha Stanly was elected Superior General, and a new General Council was formed with Sr. Marie Therese Frie, Sr. Mary Kannampuzha, Sr. Daniele Vetter, and Sr. Ligy Payyappilly—marking renewed leadership, global representation, and a revitalized mission for SJSM.</p>
+                <a href="#chapter-34" class="btn btn-sm btn-outline-primary">Read chapter details</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- New Ukraine section directly under USA block -->
+        <div class="col-12">
+          <div class="row">
+            <div class="col-12 col-lg-8">
+              <div class="card custom-card mb-4">
+                <div class="card-body">
+                  <div class="row">
+                    <div class="col-12 text-center mb-3">
+                      <h4 class="center-heading">Mission in Ukraine</h4>
+                    </div>
+                    <div class="col-12 col-sm-6 mb-3">
+                      <img src="ukraine/image1.jpeg" alt="Ukraine Sisters Group" class="custom-img" style="height:220px; object-fit:contain; background-color:#fafafa;">
+                    </div>
+                    <div class="col-12 col-sm-6 mb-3">
+                      <img src="ukraine/image2.jpeg" alt="Sisters Praying on Rooftop" class="custom-img" style="height:220px; object-fit:cover;">
+                    </div>
+                    <div class="col-12 mt-2">
+                      <p>Sister Ligy and Sister Laura travelled through frontline territories to witness and stand beside people affected by war. Their testimony reveals urgent needs — shelter, water, and care for those recovering from captivity.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-lg-4">
+              <div class="card custom-card mb-4">
+                <div class="card-body text-center">
+                  <h5 class="fw-bold">About the 34th General Chapter</h5>
+              <div class="row g-2 justify-content-center mb-2">
+                <div class="col-6">
+                  <img src="ukraine/image1.jpeg" alt="Ukraine Sisters Group" class="custom-img" style="height:120px; object-fit:contain; background-color:#fafafa; display:block; margin:0 auto;">
+                </div>
+                <div class="col-6">
+                  <img src="ukraine/image2.jpeg" alt="Sisters Praying on Rooftop" class="custom-img" style="height:120px; object-fit:cover; display:block; margin:0 auto;">
+                </div>
+              </div>
+                  <p class="small text-muted">Sister Ligy and Sister Laura travelled through frontline territories to witness and stand beside people affected by war. Their testimony reveals urgent needs — shelter, water, and care for those recovering from captivity.</p>
+                  <a href="#ukraine-full" class="btn btn-sm btn-primary">Read full testimony</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <article id="chapter-34" class="col-lg-8 order-lg-2 px-lg-5 chapter-article">
+      <h3 class="chapter-subtitle-black">The 34th General Chapter</h3>
        <p>The 34th General Chapter of the Congregation of SJSM was held at Saint-Marc in France from May 01 - 13, 2024. There were 40 delegated sisters repressenting from different part of the world</p>
 
           <img src="100.jpg" alt="Image" class="img-fluid rounded">
 
-          <h3>"34th General Chapter of SJSM Concludes in France with New Leadership and Renewed Mission"</h3>
+          <h3 class="chapter-subtitle-black">"34th General Chapter of SJSM Concludes in France with New Leadership and Renewed Mission"</h3>
           <p>The 34th General Chapter of the Congregation of the Sisters of Saint Joseph of Saint-Marc (SJSM) took place at Saint-Marc in France from May 01 to May 13, 2024. This important event saw the participation of forty delegated sisters, representing two Indian Provinces, the German Province, the French Province, the Ukraine Region, the USA, the Philippines, and Italy. The chapter focused on discussing the Congregation's future directions, evaluating past achievements, and setting new goals for their mission..</p>
 
           <p>The Chapter was a time of deep reflection, discussion, and decision-making, focused on the future directions and leadership of the Congregation. It was during this Chapter that Sr. Shobha Stanly was elected as the new Superior General of the Congregation. Her election marks a new chapter in the leadership of the Congregation, promising continuity and new initiatives in their mission and ministry.</p>
 
           <p></p>
 
-          <h3>"New Leadership and Global Representation Mark 34th General Chapter of SJSM"</h3>
+          <h3 class="chapter-subtitle-black">"New Leadership and Global Representation Mark 34th General Chapter of SJSM"</h3>
           <p>the General Council was formed with the election of four General Councilors who will assist Sr. Shobha Stanly in her duties. These Councilors include Sr. Marie Therese Frie from the German Province, who brings a wealth of experience from Europe; Sr. Mary Kannampuzha from the Sanjo Province in Vengoor, representing the Indian subcontinent with its rich cultural heritage; Sr. Daniele Vetter from the French Province, who provides a deep connection to the Congregation’s roots; and Sr. Ligy Payyappilly from the Ukraine Region, offering perspectives from a region facing significant challenges and transformations.</p>
           <p>The presence and participation of these sisters from various parts of the world underscore the Congregation's commitment to global solidarity, unity in diversity, and shared mission. The discussions and resolutions from this General Chapter are expected to inspire and guide the Congregation’s activities and spiritual life in the coming years, ensuring they continue to live out their charism of service and devotion to the teachings of Saint Joseph and their founding principles.            .</p>
         
@@ -347,6 +479,77 @@ The year 2025 was marked by extensive global travel and significant spiritual an
   </div>
 </div>
 </div>
+<!-- Inserted USA Silver Jubilee and Ukraine Testimony Sections -->
+<!-- USA Silver Jubilee Section -->
+<!-- USA Silver Jubilee Section (moved) -->
+
+<!-- Full Ukraine testimony (anchor target for 'Read full testimony') -->
+<div id="ukraine-full" class="container mt-5">
+  <div class="row justify-content-center">
+    <div class="col-12">
+      <div class="card custom-card">
+        <div class="card-body">
+          <div class="center-container text-black mb-3">
+            <h3 class="center-heading">A Road Not Chosen by Chance: The Testimony of Sisters Ligy and Laura from Ukraine's Frontline Territories</h3>
+          </div>
+          <div class="row justify-content-center mb-3">
+            <div class="col-12 col-sm-6 col-md-5 mb-3 mb-md-0">
+              <img src="ukraine/image1.jpeg" alt="Ukraine Sisters Group" class="img-fluid custom-img" style="width: 100%; height: 400px; object-fit: contain; background-color: #fafafa;">
+            </div>
+            <div class="col-12 col-sm-6 col-md-5 mb-3 mb-md-0">
+              <img src="ukraine/image2.jpeg" alt="Sisters Praying on Rooftop" class="img-fluid custom-img" style="width: 100%; height: 400px; object-fit: cover;">
+            </div>
+          </div>
+          <div class="article-text text-justify mt-3" style="color: #666; line-height: 1.8;">
+            <!-- Full testimony content preserved here -->
+            <p>There are journeys after which a person can never look at the world the same way again. Such was the trip of Sister Ligy and Sister Laura through central, eastern, and southern Ukraine — Kyiv, Kharkiv, Zaporizhzhia, and Kherson. They did not go as observers, but as witnesses — to see, to hear, to stand beside people for whom war has long stopped being news and become a daily way of surviving.</p>
+            <h5 class="text-black fw-bold mt-4">The Zero Line</h5>
+            <p>The sisters were at what are called "zero positions" — places as close to the frontline as it is possible to be, where the distance between life and death is measured not in kilometers but in seconds. There are no pauses between air raid alarms: shelling struck every hour, and every hour became a trial — not only physical, but above all spiritual. Living at such a place, where danger leaves no room for rest even at night, is an experience that cannot be fully conveyed in words to those who have not lived through it.</p>
+            
+            <h5 class="text-black fw-bold mt-4">Kherson: A City on the Edge</h5>
+            <p>The impression left by Kherson was especially heavy. Nearly every building in the city has been destroyed — the war has left its mark on every street. Part of the city is still under occupation, and even the liberated part has found no peace: there is no water. The cause is a tragedy that shocked the whole world: the destruction of the dam, after which many people died, and bodies still remain in the water. Because of this, the city's water supply is unusable — water has become a source not of life, but of danger.</p>
+            <p>This is one of the most painful paradoxes of war: liberation does not always mean a return to normal life. People regain freedom of movement but lose the most basic things — clean water, safe housing, the sense that tomorrow will resemble today.</p>
+            <p>The situation in the occupied part of the city is a separate, even deeper wound. The people who remain there are living through something that, in the 21st century, seems as though it would not be possible: the occupying authorities do not allow humanitarian aid to reach residents, and Russia itself provides none either. To survive, people are eating rats. For five years now, they have had neither electricity nor water — conditions we take for granted as basic have become an unattainable luxury there.</p>
+            
+            <h5 class="text-black fw-bold mt-4">Those Who Survived Captivity</h5>
+            <p>The sisters spoke with women and men who had survived captivity. Such conversations demand particular gentleness and patience — the trauma of captivity stays in the body and memory for a long time, and every account costs the person telling it dearly. That these people found the courage to speak is, in itself, an act of bravery.</p>
+            
+            <h5 class="text-black fw-bold mt-4">Humiliation as a Weapon</h5>
+            <p>One of the men the sisters spoke with shared a story that reveals another dimension of this war — the use of humiliation as a tool of pressure. He recounted that Russian soldiers stopped the bus he was driving and forced every passenger to speak only Russian. Then everyone was taken outside and forced to strip naked in the street.</p>
+            <p>This is not simply an act of cruelty — it is testimony to how occupation tries to break a person not only physically but from within, stripping away the most fundamental things: the right to one's own language, one's own body, one's own dignity.</p>
+            
+            <h5 class="text-black fw-bold mt-4">The Woman Who Carried Her Life in Her Hands</h5>
+            <p>Among the stories that left the deepest mark on the sisters is that of a woman who looks about ninety years old, though she is in fact fifty-seven. The gap between her outward appearance and her biological age is silent testimony to what the war has done to her. She suffered a lacerating wound from a missile explosion and, holding her own abdominal organs in her hands, walked to a doctor on her own.</p>
+            <p>It is hard to find words adequate to such an experience. This is a story not only of physical suffering, but of a will strong enough to keep a body moving even when moving seems impossible.</p>
+            
+            <h5 class="text-black fw-bold mt-4">Children Given Back the Chance to Learn</h5>
+            <p>Among the people the sisters met is a family with two children, eleven and thirteen years old, who have serious injuries. In the place where they currently live, schooling is impossible: there is neither safety nor the conditions for it. Hearing this story, we all decided together to give these children an opportunity, and we invited the family to move to us — to give them what they deserve: the chance to learn, to grow, to have something resembling a childhood after all they have endured.</p>
+            <p>This decision is not simply an act of mercy. It is a recognition that a child's education and future should not depend on where exactly the front line happens to fall.</p>
+            
+            <h5 class="text-black fw-bold mt-4">A City Where Every Step Matters</h5>
+            <p>One of the most telling details of this journey is a warning the sisters heard and carried with them from their own experience: in the city, one must walk very carefully, because mines are hidden everywhere. ‘Said matter-of-fact’, this sentence in fact describes a completely transformed reality: a space that was once an ordinary city of sidewalks, courtyards, and parks now demands constant vigilance. Even an ordinary walk becomes a decision requiring a calculation of risk.</p>
+            
+            <h5 class="text-black fw-bold mt-4">What to Do With What Was Seen</h5>
+            <p>Coming home did not put a period on this story — on the contrary, it has become its continuation. Having seen with their own eyes how people live practically at zero, Sister Ligy and Sister Laura — and, together with them, all of us who prayed and waited for their return — understood that simply telling what they had seen was not enough.</p>
+            <p>So a decision was made: to direct all our shared efforts toward bringing in donors to help build homes for families who still live practically on the frontline and have no way to move to safer territory — to us. These are people who, for various reasons, cannot leave: some have nowhere to go, others have nothing to go with, still others are simply so exhausted that they no longer have the strength for another move into the unknown.</p>
+            <p>We recognize that we, too, sometimes live through shelling, and that this leaves its own mark. But comparing our experience to what is happening at zero, in a ruined Kherson, or in the places from which people emerge from captivity, is impossible. The difference is too great to consider our trials equivalent. That is exactly why our duty is not to stay silent about what we have seen, but to act: to seek out donors, to build homes, to give families a real chance to move to a place where shelling every hour is not part of daily life.</p>
+            <p>Every home built is not just a roof overhead. It is the chance for a child to go back to school, for parents to stop counting the minutes between air raid alarms, for a family to begin living, rather than merely surviving.</p>
+            <p>The account of Sister Ligy and Sister Laura is not simply a description of ruined buildings or a tally of shelling. It is testimony about people: about a woman who walked to a doctor holding her own life in her hands; about children held back a chance to learn; about the residents of Kherson living without water among the ruins; about those who returned from captivity and found the courage to speak; about a man who was forced to strip naked in the street simply for wanting to speak his own language.</p>
+            <p>Journeys like this are a reminder: behind every piece of news about the war stand real faces, real names, real fates. And often the most we can do is to see, to listen, not to look away — and to turn what we have heard into concrete action that gives families a roof overhead and the chance to keep living.</p>
+            
+            <!-- Call to Action Frame matching your thematic styling -->
+            <div class="p-4 mt-4 rounded text-center" style="background-color: #fcf8e3; border: 1px solid #faf2cc; font-style: italic; font-weight: 600;">
+              We ask all the sisters for prayer for the people we met, for the families still living at zero, for the children now given the chance to learn. And if it is on anyone's heart, we also ask you to join in the search for donors for this effort, so that together we may build more homes and give more families a chance at a safe life.
+              <br><br>
+              <span style="font-weight: bold; font-style: normal;">With love and prayer,<br>Sister Kristina and the sisters from Ukraine</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
 <div class="container mt-5">
     <div class="row justify-content-center align-items-stretch">
         <div class="col-md-12">
