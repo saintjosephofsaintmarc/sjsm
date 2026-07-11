@@ -130,12 +130,18 @@
       gap: 20px;
     }
 
-    .hero.overlay.inner-page {
-      background-size: cover;
-      background-position: center;
-      background: linear-gradient(rgba(93, 99, 115, 0.7), rgba(93, 99, 115, 0.7)), url('header.jpg') no-repeat center center;
-    }
+   .hero.overlay.inner-page {
+    background: 
+      linear-gradient(rgba(93, 99, 115, 0.7), rgba(93, 99, 115, 0.7)),
+        url('Saint-Marc + Therese Avila.jpg') no-repeat center center;
+    
+    background-size: cover !important;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+    width: 100%;
+}
 
+  
     .contact-card {
       flex: 1 1 calc(50% - 20px);
       border: 1px solid #ccc;
@@ -164,6 +170,51 @@
     border-radius: 8px;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
   }
+  
+  /* Custom image and card styles for inserted sections */
+  .custom-img {
+    width: 100%;
+    height: 260px;
+    object-fit: cover;
+    border-radius: 8px;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.06);
+  }
+
+  .custom-card {
+    border-radius: 12px;
+    border: 1px solid #f0f0f0;
+    box-shadow: 0 6px 30px rgba(0,0,0,0.04);
+  }
+
+  .center-heading h3, .center-heading {
+    font-size: 1.45rem;
+    font-weight: 700;
+    color: #111;
+  }
+
+  .section .divider {
+    height: 1px;
+    background: #eee;
+    margin: 1.6rem 0;
+    border-radius: 2px;
+  }
+  
+  /* Styling for the 34th General Chapter to stand out */
+  .chapter-article {
+    background: linear-gradient(180deg, #fffef8 0%, #ffffff 100%);
+    border-left: 6px solid #f0ad4e;
+    padding: 1.6rem 1.25rem;
+    border-radius: 10px;
+    box-shadow: 0 8px 30px rgba(0,0,0,0.04);
+  }
+
+  .chapter-article h3 {
+    color: #b45309; /* warm accent */
+    font-weight: 800;
+  }
+  .chapter-article h3.chapter-subtitle-black {
+    color: #000 !important;
+  }
   </style>
 </head>
 <body>
@@ -185,25 +236,25 @@
             </div>
             <div class="col-8 text-center">
               <ul class="js-clone-nav d-none d-lg-inline-block text-start site-menu mx-auto">
-                <li><a href="index(french).html">Home</a></li>
-                <li class="active"><a href="about(french).html">About</a></li>
-                <li><a href="blog(french).html">Blog</a></li>
+                <li><a href="index.html">Accueil</a></li>
+                <li class="active"><a href="about.html">À propos</a></li>
+                <li><a href="blog.html">Blog</a></li>
                 <li class="has-children">
                   <a href="#">Pages</a>
                   <ul class="dropdown">
-                    <li><a href="single(french).html">Formation</a></li>
-                    <li><a href="case-study(french).html">Spiritual Insights</a></li>
+                    <li><a href="single.html">Formation</a></li>
+                    <li><a href="case-study.html">Perspectives spirituelles</a></li>
                     <li class="has-children">
-                      <a href="index(french).html">Language (FRE)</a>
+                      <a href="#">Langue (FR)</a>
                       <ul class="dropdown">
-                        <li><a href="index.html">English</a></li>
-                        <li><a href="index(french).html">French</a></li>
-                        <li><a href="index(german).html">German</a></li>
+                        <li><a href="index.html">Anglais</a></li>
+                        <li><a href="index(french).html">Français</a></li>
+                        <li><a href="index(german).html">Allemand</a></li>
                       </ul>
                     </li>
                   </ul>
                 </li>
-                <li><a href="contact(french).html">Contact</a></li>
+                <li><a href="contact.html">Nous contacter</a></li>
               </ul>
             </div>
             <div class="col-2 text-end">
@@ -221,32 +272,125 @@
     </div>
   </nav>
 
+
+
   <div class="hero overlay inner-page">
    
     <div class="row align-items-center justify-content-center text-center pt-5">
       <div class="col-lg-6"></div>
       <div class="center-heading">
-        <h1 class="row align-items-center justify-content-center text-center pt-5 text-white">Blog/Actualités</h1>
+        <h1 class="row align-items-center justify-content-center text-center pt-5 text-white">Blog / Actualités</h1>
       </div>
     </div>
   </div>
-  
+
   <div class="section">
     <div class="container article">
-      <div class="row justify-content-center align-items-stretch">
-      
-        <article class="col-lg-8 order-lg-2 px-lg-5">
-    <h3>Le 34e Chapitre Général</h3>
-    <p>Le 34e Chapitre Général de la Congrégation de SJSM s'est tenu à Saint-Marc en France du 01 au 13 mai 2024. Quarante sœurs déléguées représentant différentes parties du monde y ont participé.</p>
+        <div class="row justify-content-center align-items-stretch">
+
+        <div class="col-12 col-lg-8" id="usa-jubilee">
+          <div class="card custom-card mb-4">
+            <div class="card-body">
+              <div class="row align-items-center">
+                <div class="col-12 text-center mb-3">
+                  <h3 class="center-heading">Célébration des 25 ans de présence des SJSM aux États-Unis</h3>
+                </div>
+                <div class="col-12 col-md-4 mb-3">
+                  <img src="./homepage/image1.jpeg" alt="USA Jubilee Image 1" class="custom-img">
+                </div>
+                <div class="col-12 col-md-4 mb-3">
+                  <img src="./homepage/image2.jpeg" alt="USA Jubilee Image 2" class="custom-img">
+                </div>
+                <div class="col-12 col-md-4 mb-3">
+                  <img src="./homepage/image3.jpeg" alt="USA Jubilee Image 3" class="custom-img">
+                </div>
+                <div class="col-12 mt-3">
+                  <p>Les Sœurs de la Province de Sanjo, Vengoor, rendent service dans des maisons de retraite et des hôpitaux à New York, en Ohio et en Caroline du Nord. Leur service au sein des instituts et des paroisses est très apprécié. Nos plus sincères félicitations, chères sœurs, pour votre engagement et votre fidélité à la suite de Jésus, et pour faire vivre le charisme et la spiritualité de notre Congrégation !</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        
+        <div class="col-12 col-lg-4" id="ukraine-testimony">
+          <div class="card custom-card mb-4">
+            <div class="card-body">
+              <div class="text-center mb-2">
+                <h4 class="center-heading">À propos du 34ème Chapitre Général</h4>
+              </div>
+              <div class="row g-2">
+                <img src="100.jpg" alt="34th Chapter" class="img-fluid rounded mb-2" style="height:120px; object-fit:cover;">
+              </div>
+              <div class="mt-3" style="color:#666; line-height:1.5;">
+                <p class="small">Le 34ème Chapitre Général de la Congrégation des SJSM s'est tenu à Saint-Marc en France du 1er au 13 mai 2024. Quarante sœurs déléguées y représentaient les régions d'Inde, d'Allemagne, de France, d'Ukraine, des États-Unis, des Philippines et d'Italie.</p>
+                <p class="small">Au cours du Chapitre, Sœur Shobha Stanly a été élue Supérieure Générale, et un nouveau Conseil Général a été formé avec Sœur Marie-Thérèse Frie, Sœur Mary Kannampuzha, Sœur Danièle Vetter et Sœur Ligy Payyappilly — marquant ainsi un leadership renouvelé, une représentation mondiale et une mission redynamisée pour les SJSM.</p>
+                <a href="#chapter-34" class="btn btn-sm btn-outline-primary">Lire les détails du Chapitre</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12">
+          <div class="row">
+            <div class="col-12 col-lg-8">
+              <div class="card custom-card mb-4">
+                <div class="card-body">
+                  <div class="row">
+                    <div class="col-12 text-center mb-3">
+                      <h4 class="center-heading">Mission en Ukraine</h4>
+                    </div>
+                    <div class="col-12 col-sm-6 mb-3">
+                      <img src="ukraine/image1.jpeg" alt="Ukraine Sisters Group" class="custom-img" style="height:220px; object-fit:contain; background-color:#fafafa;">
+                    </div>
+                    <div class="col-12 col-sm-6 mb-3">
+                      <img src="ukraine/image2.jpeg" alt="Sisters Praying on Rooftop" class="custom-img" style="height:220px; object-fit:cover;">
+                    </div>
+                    <div class="col-12 mt-2">
+                      <p>Sœur Ligy et Sœur Laura ont parcouru les territoires de la ligne de front pour témoigner et se tenir aux côtés des personnes touchées par la guerre. Leur témoignage révèle des besoins urgents : des abris, de l'eau et des soins pour ceux qui se remettent de la captivité.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-lg-4">
+              <div class="card custom-card mb-4">
+                <div class="card-body text-center">
+                  <h5 class="fw-bold">À propos du 34ème Chapitre Général</h5>
+              <div class="row g-2 justify-content-center mb-2">
+                <div class="col-6">
+                  <img src="ukraine/image1.jpeg" alt="Ukraine Sisters Group" class="custom-img" style="height:120px; object-fit:contain; background-color:#fafafa; display:block; margin:0 auto;">
+                </div>
+                <div class="col-6">
+                  <img src="ukraine/image2.jpeg" alt="Sisters Praying on Rooftop" class="custom-img" style="height:120px; object-fit:cover; display:block; margin:0 auto;">
+                </div>
+              </div>
+                  <p class="small text-muted">Sœur Ligy et Sœur Laura ont parcouru les territoires de la ligne de front pour témoigner et se tenir aux côtés des personnes touchées par la guerre. Leur témoignage révèle des besoins urgents : des abris, de l'eau et des soins pour ceux qui se remettent de la captivité.</p>
+                  <a href="#ukraine-full" class="btn btn-sm btn-primary">Lire le témoignage complet</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <article id="chapter-34" class="col-lg-8 order-lg-2 px-lg-5 chapter-article">
+      <h3 class="chapter-subtitle-black">Le 34ème Chapitre Général</h3>
+       <p>Le 34ème Chapitre Général de la Congrégation des SJSM s'est tenu à Saint-Marc en France du 1er au 13 mai 2024. Quarante sœurs déléguées, représentant différentes parties du monde, y ont participé.</p>
 
           <img src="100.jpg" alt="Image" class="img-fluid rounded">
 
-      <h3>"Le 34e Chapitre Général de SJSM se conclut en France avec une nouvelle direction et une mission renouvelée"</h3>
-          <p>Le 34e Chapitre Général de la Congrégation des Sœurs de Saint Joseph de Saint-Marc (SJSM) a eu lieu à Saint-Marc en France du 01 au 13 mai 2024. Cet événement important a vu la participation de quarante sœurs déléguées, représentant deux provinces indiennes, la province allemande, la province française, la région d'Ukraine, les États-Unis, les Philippines et l'Italie. Le chapitre a mis l'accent sur la discussion des futures orientations de la Congrégation, l'évaluation des réalisations passées et la définition de nouveaux objectifs pour leur mission.</p>
-          <p>Le Chapitre a été un temps de réflexion profonde, de discussion et de prise de décision, centré sur les orientations futures et la direction de la Congrégation. C'est au cours de ce Chapitre que Sr. Shobha Stanly a été élue nouvelle Supérieure Générale de la Congrégation. Son élection marque un nouveau chapitre dans la direction de la Congrégation, promettant continuité et nouvelles initiatives dans leur mission et leur ministère.</p>
-          <h3>"Nouvelle direction et représentation mondiale marquent le 34e Chapitre Général de SJSM"</h3>
-          <p>Le Conseil Général a été formé avec l'élection de quatre Conseillères Générales qui assisteront Sr. Shobha Stanly dans ses fonctions. Ces Conseillères incluent Sr. Marie Therese Frie de la province allemande, qui apporte une grande expérience de l'Europe; Sr. Mary Kannampuzha de la province de Sanjo à Vengoor, représentant le sous-continent indien avec sa riche héritage culturel; Sr. Daniele Vetter de la province française, qui offre une connexion profonde avec les racines de la Congrégation; et Sr. Ligy Payyappilly de la région d'Ukraine, offrant des perspectives d'une région faisant face à des défis et des transformations significatives.</p>
-          <p>La présence et la participation de ces sœurs provenant de diverses parties du monde soulignent l'engagement de la Congrégation envers la solidarité mondiale, l'unité dans la diversité et la mission partagée. Les discussions et les résolutions de ce Chapitre Général devraient inspirer et guider les membres de la Congrégation dans leurs efforts pour répondre aux besoins de leur temps avec compassion, foi et un sens renouvelé de service.</p>
+          <h3 class="chapter-subtitle-black">« Le 34ème Chapitre Général des SJSM s'achève en France avec un nouveau leadership et une mission renouvelée »</h3>
+          <p>Le 34ème Chapitre Général de la Congrégation des Sœurs de Saint-Joseph de Saint-Marc (SJSM) a eu lieu à Saint-Marc en France du 1er au 13 mai 2024. Cet événement important a vu la participation de quarante sœurs déléguées, représentant deux provinces indiennes, la province allemande, la province française, la région d'Ukraine, les États-Unis, les Philippines et l'Italie. Le chapitre s'est concentré sur les orientations futures de la Congrégation, l'évaluation des réalisations passées et la définition de nouveaux objectifs pour leur mission.</p>
+
+          <p>Ce Chapitre fut un temps de profonde réflexion, de discussion et de prise de décision, centré sur les orientations futures et la gouvernance de la Congrégation. C'est au cours de ce Chapitre que Sœur Shobha Stanly a été élue nouvelle Supérieure Générale de la Congrégation. Son élection marque un nouveau chapitre dans la direction de la Congrégation, promettant continuité et initiatives nouvelles dans leur mission et leur ministère.</p>
+
+          <p></p>
+
+          <h3 class="chapter-subtitle-black">« Un nouveau leadership et une représentation mondiale marquent le 34ème Chapitre Général des SJSM »</h3>
+          <p>Le Conseil Général a été formé avec l'élection de quatre Conseillères Générales qui assisteront Sœur Shobha Stanly dans ses fonctions. Ces Conseillères incluent Sœur Marie-Thérèse Frie de la province allemande, qui apporte une riche expérience européenne ; Sœur Mary Kannampuzha de la province de Sanjo à Vengoor, représentant le sous-continent indien et son riche patrimoine culturel ; Sœur Danièle Vetter de la province française, qui assure un lien profond avec les racines de la Congrégation ; et Sœur Ligy Payyappilly de la région d'Ukraine, offrant les perspectives d'une région confrontée à des défis et des transformations majeurs.</p>
+          <p>La présence et la participation de ces sœurs venues de diverses parties du monde soulignent l'engagement de la Congrégation en faveur de la solidarité mondiale, de l'unité dans la diversité et d'une mission partagée. Les discussions et les résolutions de ce Chapitre Général devraient inspirer et guider les activités et la vie spirituelle de la Congrégation dans les années à venir, garantissant qu'elles continuent à faire vivre leur charisme de service et de dévotion aux enseignements de Saint Joseph et à leurs principes fondateurs.</p>
+        
+
         </article>
 
         <div class="col-md-12 col-lg-1 order-lg-1">
@@ -270,9 +414,8 @@
 
           <div class="share floating-block sticky-top">
 
-            <h2 class="mb-3 text-black">34e Chapitre Général SJSM</h2>
-      <p>La vidéo ci-dessus concerne le 34e Chapitre Général de la Congrégation de SJSM qui s'est tenu à Saint-Marc en France du 1er au 13 mai 2024.</p>
-
+            <h2 class="mb-3 text-black">34ème Chapitre Général des SJSM</h2>
+            <p>La vidéo ci-dessus concerne le 34ème Chapitre Général de la Congrégation des SJSM, qui s'est tenu à Saint-Marc en France du 1er au 13 mai 2024.</p>
            
           </div>
         </div>
@@ -293,7 +436,7 @@
 <div class="section sec-news">
   <div class="container">
     <div class="card-body text-center">
-      <h3 class="center-heading text-black mb-4">INFORMATIONS DU GENERALAT – 2025</h3>
+      <h3 class="center-heading text-black mb-4">INFORMATIONS DE LA MAISON GÉNÉRALE – 2025</h3>
     <div class="image-card usa-gallery-card">
       <img src="generalate/image1.jpeg" alt="Image 1">
       <img src="generalate/image2.png" alt="Image 2">
@@ -302,31 +445,23 @@
       <img src="generalate/image15.jpeg" alt="Image 5">
       <img src="generalate/image6.jpeg" alt="">
       <img src="generalate/image7.jpeg" alt="">
-      <img src="generalate/image24.jpeg" alt="">
+      <img src="generalate/image4.jpeg" alt="">
       <img src="generalate/image17.jpeg" alt="Image 7">
       <img src="generalate/image21.jpeg" alt="Image 8">
       <img src="generalate/image5.jpeg" alt="Image 9">
       <img src="generalate/image9.jpeg" alt="Image 10">
     </div>
     <div>
-      <p> <b>Réflexion Spirituelle & Message Central</p></b>
-L'année 2025, avec tous ses « hauts et ses bas, moments de joies, de peines, de stress, de bonne santé et de maladie », nous mène à la profonde réalisation de Sainte Thérèse d'Avila : **« Dieu seul suffit ! »** Cette vérité nous guide à travers tous les moments, lumineux et difficiles, vers la « miséricorde et l'amour majestueux » de Dieu.
-<br>
----
-
-<b>Missions du Généralat et Vie Communautaire en 2025</b> 
-
-L'année 2025 a été marquée par de vastes voyages mondiaux et d'importants jalons spirituels et administratifs pour les Sœurs de Saint-Joseph de Saint-Marc.
-
-**Portée Mondiale :** La Supérieure Générale Sr. Shobha Stanly et la Conseillère Générale Sr. Ligy Payyappilly ont passé trois mois (du 2 janvier au 28 mars) en une vaste visite à travers l'**Inde**, atteignant 36 communautés dans les deux provinces et assistant aux Engagements Permanents de plusieurs sœurs. Le Généralat a également étendu ses racines lorsque Sr. Danièle Vetter et Sr. Sheeba Thomas se sont rendues à **Madagascar** en mars pour bénir et inaugurer le premier couvent de la Congrégation là-bas. Plus tard dans l'année (du 5 au 20 août), Sr. Marie-Thérèse Frie et Sr. Ligy Payyappilly ont effectué leur première visite aux communautés florissantes des **Philippines**. 
-
-**Direction de la Congrégation :** Un moment crucial a eu lieu en mai lorsque Sr. Shobha Stanly a participé à la **Conférence UISG** à **Rome**, un important rassemblement de Supérieures Générales. Lors de sa visite, elle a été témoin de l'élection historique du **Nouveau Pape Léon XIV** le 8 mai, confirmant la foi vibrante de l'Église mondiale. Sur le plan administratif, la **Réunion des Conseils Européens** s'est tenue à Saint-Marc (22 – 23 mai) pour aborder les questions pressantes de la vie religieuse européenne.
-
-**Jalons Spirituels et Administratifs :** L'année a inclus des célébrations joyeuses comme l'**Engagement Permanent de Sr. Tavika en Ukraine** (6 septembre) et la visite de l'Archevêque Stephan Burger à la Maison Provinciale de St. Trudpert en novembre pour la Fête du Christ-Roi. Personnellement, il y a eu de la joie lorsque Sr. Mary Kannampuzha a réussi son permis de conduire et obtenu son **permis de conduire européen** (27 octobre). La Congrégation a également célébré la publication du livre de Sr. Ligy Payyappilly, **'Appelée en Ukraine,'** en janvier, et ses deux semaines dédiées à la prédication des Écritures en **Espagne** en septembre, une merveilleuse contribution à la diffusion de la Bonne Nouvelle.
-
-
-    </p>
       <p>
+            Du 18 octobre au 12 novembre 2024, j'ai voyagé aux États-Unis avec Sœur Mary Kannampuzha. Après avoir reçu mon visa à la dernière minute, nous avons pris l'avion de Francfort à Corpus Christi, Texas, où les températures dépassaient 30°C – un contraste frappant avec les 16-18°C en France. Malgré le changement climatique, nous avons été accueillies chaleureusement et bien soignées. La communauté de Corpus Christi se compose de trois sœurs, toutes travaillant dans un hôpital.
+        </p>
+        <p>
+            Ensuite, nous avons visité San Antonio et participé au 150e anniversaire de l'Archidiocèse, où nous avons rencontré l'Archevêque Gustavo Garcia-Siller. À New York, nous avons visité les communautés du Diocèse de Brooklyn et plusieurs lieux significatifs. Nous nous sommes également rendues en Caroline du Nord, dans l'Ohio et en Pennsylvanie pour rencontrer nos sœurs aînées, y compris Mère Raphael, âgée de 99 ans, qui sert toujours avec dévouement.
+        </p>
+        <p>
+            Ce voyage a été marqué par l'amour, l'hospitalité et l'engagement de nos sœurs. Bien que loin de leurs provinces, elles vivent notre Charisme avec simplicité et foi et sont très appréciées dans leurs communautés locales. Je remercie Dieu et toutes nos sœurs pour cette expérience enrichissante, qui souligne la vitalité des SJSM aux États-Unis.
+        </p>
+        <p>
             <strong>Sr. Shobha Stanly,<br>
             Supérieure Générale SJSM</strong>
         </p>
@@ -334,6 +469,70 @@ L'année 2025 a été marquée par de vastes voyages mondiaux et d'importants ja
   </div>
 </div>
 </div>
+<div id="ukraine-full" class="container mt-5">
+  <div class="row justify-content-center">
+    <div class="col-12">
+      <div class="card custom-card">
+        <div class="card-body">
+          <div class="center-container text-black mb-3">
+            <h3 class="center-heading">Un chemin qui n'a pas été choisi par hasard : le témoignage des Sœurs Ligy et Laura depuis les territoires de la ligne de front en Ukraine</h3>
+          </div>
+          <div class="row justify-content-center mb-3">
+            <div class="col-12 col-sm-6 col-md-5 mb-3 mb-md-0">
+              <img src="ukraine/image1.jpeg" alt="Ukraine Sisters Group" class="img-fluid custom-img" style="width: 100%; height: 400px; object-fit: contain; background-color: #fafafa;">
+            </div>
+            <div class="col-12 col-sm-6 col-md-5 mb-3 mb-md-0">
+              <img src="ukraine/image2.jpeg" alt="Sisters Praying on Rooftop" class="img-fluid custom-img" style="width: 100%; height: 400px; object-fit: cover;">
+            </div>
+          </div>
+          <div class="article-text text-justify mt-3" style="color: #666; line-height: 1.8;">
+            <p>Il y a des voyages après lesquels on ne peut plus jamais regarder le monde de la même manière. Tel fut le voyage de Sœur Ligy et Sœur Laura à travers le centre, l'est et le sud de l'Ukraine — Kiev, Kharkiv, Zaporijjia et Kherson. Elles n'y sont pas allées en tant qu'observatrices, mais en tant que témoins — pour voir, pour entendre, pour se tenir aux côtés de personnes pour qui la guerre a depuis longtemps cessé d'être une simple actualité pour devenir un mode de survie quotidien.</p>
+            <h5 class="text-black fw-bold mt-4">La Ligne Zéro</h5>
+            <p>Les sœurs se trouvaient dans ce qu'on appelle les « positions zéro » — des endroits aussi proches de la ligne de front qu'il est possible de l'être, où la distance entre la vie et la mort ne se mesure pas en kilomètres mais en secondes. Il n'y a pas de répit entre les alertes aériennes : les bombardements frappaient toutes les heures, et chaque heure devenait une épreuve — non seulement physique, mais surtout spirituelle. Vivre dans un tel lieu, où le danger ne laisse aucun repos même la nuit, est une expérience qui ne peut être pleinement transmise par des mots à ceux qui ne l'ont pas vécue.</p>
+            
+            <h5 class="text-black fw-bold mt-4">Kherson : une ville à la limite</h5>
+            <p>L'impression laissée par Kherson a été particulièrement lourde. Presque tous les bâtiments de la ville ont été détruits — la guerre a laissé ses stigmates dans chaque rue. Une partie de la ville est toujours sous occupation, et même la partie libérée n'a pas trouvé la paix : il n'y a pas d'eau. La cause en est une tragédie qui a secoué le monde entier : la destruction du barrage, à la suite de laquelle de nombreuses personnes ont péri, et des corps se trouvent encore dans l'eau. Pour cette raison, le réseau d'eau de la ville est inutilisable — l'eau est devenue une source non pas de vie, mais de danger.</p>
+            <p>C'est l'un des paradoxes les plus douloureux de la guerre : la libération ne signifie pas toujours un retour à une vie normale. Les gens retrouvent la liberté de mouvement mais perdent les choses les plus fondamentales — l'eau propre, un logement sûr, le sentiment que demain ressemblera à aujourd'hui.</p>
+            <p>La situation dans la partie occupée de la ville est une blessure à part, encore plus profonde. Les personnes qui y restent vivent une situation qui, au XXIe siècle, semble impossible : les autorités d'occupation ne permettent pas à l'aide humanitaire d'atteindre les habitants, et la Russie elle-même n'en fournit aucune. Pour survivre, les gens mangent des rats. Depuis cinq ans maintenant, ils n'ont ni électricité ni eau — des conditions que nous considérons comme fondamentales sont devenues là-bas un luxe inaccessible.</p>
+            
+            <h5 class="text-black fw-bold mt-4">Ceux qui ont survécu à la captivité</h5>
+            <p>Les sœurs ont parlé avec des femmes et des hommes qui ont survécu à la captivité. De telles conversations exigent une douceur et une patience particulières — le traumatisme de la captivité reste longtemps gravé dans le corps et la mémoire, et chaque récit coûte cher à la personne qui le livre. Que ces personnes aient trouvé le courage de parler est, en soi, un acte de bravoure.</p>
+            
+            <h5 class="text-black fw-bold mt-4">L'humiliation comme arme</h5>
+            <p>L'un des hommes avec qui les sœurs ont parlé a partagé une histoire qui révèle une autre dimension de cette guerre — l'utilisation de l'humiliation comme outil de pression. Il a raconté que des soldats russes ont arrêté le bus qu'il conduisait et ont forcé chaque passager à ne parler que le russe. Ensuite, tout le monde a été emmené à l'extérieur et contraint de se déshabiller nu dans la rue.</p>
+            <p>Il ne s'agit pas simplement d'un acte de cruauté — c'est le témoignage de la manière dont l'occupation tente de briser une personne non seulement physiquement, mais de l'intérieur, en lui enlevant les choses les plus fondamentales : le droit à sa propre langue, à son propre corps, à sa propre dignité.</p>
+            
+            <h5 class="text-black fw-bold mt-4">La femme qui portait sa vie entre ses mains</h5>
+            <p>Parmi les histoires qui ont le plus marqué les sœurs figure celle d'une femme qui semble avoir environ quatre-vingt-dix ans, alors qu'elle en a en réalité cinquante-sept. Le fossé entre son apparence extérieure et son âge biologique est le témoignage silencieux de ce que la guerre lui a fait subir. Elle a souffert d'une blessure lacérante causée par l'explosion d'un missile et, tenant ses propres organes abdominaux entre ses mains, a marché seule jusqu'à un médecin.</p>
+            <p>Il est difficile de trouver des mots adéquats pour décrire une telle expérience. C'est l'histoire non seulement d'une souffrance physique, mais d'une volonté assez forte pour faire avancer un corps même lorsque tout mouvement semble impossible.</p>
+            
+            <h5 class="text-black fw-bold mt-4">Rendre aux enfants la chance d'apprendre</h5>
+            <p>Parmi les personnes que les sœurs ont rencontrées se trouve une famille avec deux enfants, âgés de onze et treize ans, qui souffrent de graves blessures. Là où ils vivent actuellement, la scolarisation est impossible : il n'y a ni la sécurité ni les conditions pour cela. En entendant cette histoire, nous avons toutes décidé ensemble de donner une opportunité à ces enfants, et nous avons invité la famille à s'installer chez nous — pour leur donner ce qu'ils méritent : la chance d'apprendre, de grandir, d'avoir quelque chose qui ressemble à une enfance après tout ce qu'ils ont enduré.</p>
+            <p>Cette décision n'est pas un simple acte de miséricorde. C'est la reconnaissance que l'éducation et l'avenir d'un enfant ne doivent pas dépendre de l'endroit exact où se trouve la ligne de front.</p>
+            
+            <h5 class="text-black fw-bold mt-4">Une ville où chaque pas compte</h5>
+            <p>L'un des détails les plus révélateurs de ce voyage est un avertissement que les sœurs ont entendu et qu'elles ont retenu de leur propre expérience : en ville, il faut marcher très prudemment, car des mines sont cachées partout. Dite avec détachement, cette phrase décrit en fait une réalité complètement transformée : un espace qui était autrefois une ville ordinaire avec ses trottoirs, ses cours et ses parcs exige désormais une vigilance de tous les instants. Même une simple promenade devient une décision nécessitant un calcul des risques.</p>
+            
+            <h5 class="text-black fw-bold mt-4">Que faire de ce qui a été vu</h5>
+            <p>Le retour à la maison n'a pas mis un point final à cette histoire — au contraire, il en est devenu le prolongement. Ayant vu de leurs propres yeux comment les gens vivent pratiquement sur la ligne zéro, Sœur Ligy et Sœur Laura — et, avec elles, nous toutes qui avons prié et attendu leur retour — ont compris qu'il ne suffisait pas de raconter simplement ce qu'elles avaient vu.</p>
+            <p>Une décision a donc été prise : orienter tous nos efforts communs vers la recherche de bienfaiteurs afin d'aider à construire des maisons pour les familles qui vivent encore pratiquement sur la ligne de front et n'ont aucun moyen de se déplacer vers un territoire plus sûr — vers chez nous. Ce sont des personnes qui, pour diverses raisons, ne peuvent pas partir : certaines n'ont nulle part où aller, d'autres n'ont rien pour partir, d'autres encore sont tout simplement si épuisées qu'elles n'ont plus la force d'entreprendre un autre déménagement vers l'inconnu.</p>
+            <p>Nous reconnaissons que nous aussi, parfois, vivons sous les bombardements, et que cela laisse ses propres traces. Mais comparer notre expérience à ce qui se passe à la ligne zéro, dans un Kherson en ruines, ou dans les endroits d'où les gens sortent de captivité, est impossible. La différence est trop grande pour considérer nos épreuves comme équivalentes. C'est exactement la raison pour laquelle notre devoir n'est pas de rester silencieuses sur ce que nous avons vu, mais d'agir : de chercher des bienfaiteurs, de construire des maisons, de donner aux familles une véritable chance de déménager dans un endroit où les bombardements ne font pas partie de la vie quotidienne.</p>
+            <p>Chaque maison construite n'est pas seulement un toit au-dessus de la tête. C'est la chance pour un enfant de retourner à l'école, pour des parents d'arrêter de compter les minutes entre les alertes aériennes, pour une famille de commencer à vivre, plutôt que de simplement survivre.</p>
+            <p>Le récit de Sœur Ligy et Sœur Laura n'est pas une simple description de bâtiments en ruines ou un décompte de bombardements. C'est un témoignage sur les personnes : sur une femme qui a marché jusqu'au médecin en tenant sa propre vie entre ses mains ; sur des enfants privés de la chance d'apprendre ; sur les habitants de Kherson vivant sans eau au milieu des ruines ; sur ceux qui sont revenus de captivité et ont trouvé le courage de parler ; sur un homme qui a été contraint de se déshabiller nu dans la rue simplement pour avoir voulu parler sa propre langue.</p>
+            <p>Des voyages comme celui-ci nous rappellent que derrière chaque nouvelle concernant la guerre se cachent de vrais visages, de vrais noms, de vrais destins. Et souvent, tout ce que nous pouvons faire, c'est voir, écouter, ne pas détourner le regard — et transformer ce que nous avons entendu en actions concrètes qui donnent aux familles un toit et la chance de continuer à vivre.</p>
+            
+            <div class="p-4 mt-4 rounded text-center" style="background-color: #fcf8e3; border: 1px solid #faf2cc; font-style: italic; font-weight: 600;">
+              Nous demandons à toutes les sœurs de prier pour les personnes que nous avons rencontrées, pour les familles qui vivent encore à la ligne zéro, pour les enfants qui ont désormais la chance d'apprendre. Et si cela tient à cœur à l'une d'entre vous, nous vous demandons également de vous joindre à la recherche de bienfaiteurs pour cet effort, afin qu'ensemble nous puissions construire plus de maisons et offrir à plus de familles la chance d'une vie en sécurité.
+              <br><br>
+              <span style="font-weight: bold; font-style: normal;">Avec tout notre amour et nos prières,<br>Sœur Kristina et les sœurs d'Ukraine</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
 <div class="container mt-5">
     <div class="row justify-content-center align-items-stretch">
         <div class="col-md-12">
@@ -352,11 +551,14 @@ L'année 2025 a été marquée par de vastes voyages mondiaux et d'importants ja
                         <div class="col-12 col-md-4 mb-3 mb-md-0">
                             <img src="2439.jpg" alt="Image 3" class="img-fluid custom-img">
                         </div><br>
+                       
+                       
                     </div>
-                    <div class="center-container text-black">
-                        <h3 class="center-heading">Mission à Madagascar : Évaluer les besoins et établir des liens communautaires</h3>
-                    </div>
-                    <p class="mt-3">Du 11 au 18 octobre, Sr. Sheeba Thomas, Sr. Chimene et Sr. Shobha Stanly ont entrepris une mission à Madagascar, coïncidant avec la semaine du Fondateur de leur Congrégation. Malgré des défis initiaux, notamment la perte du passeport de Sr. Shobha Stanly, leur voyage s'est poursuivi avec une assistance divine. À leur arrivée à Antananarivo, elles ont été chaleureusement accueillies par Sr. Miriam du Sacré-Cœur de Ragusa. Leur mission les a conduites dans diverses villes, dont Diego et Daraina, où elles ont été accueillies avec enthousiasme, chants et danses par les communautés locales. Elles ont exploré le potentiel d'établissement d'un nouveau couvent, soutenu par l'évêque local Marc Benjamin et M. Merenti, qui ont offert des terrains à cette fin. À Vohemar, elles ont été témoins de la foi vibrante de plus de 1000 étudiants et villageois, culminant par une Adoration du Saint-Sacrement. La délégation a également participé à une Eucharistie et à une cérémonie de Confirmation pour 62 enfants et adultes. Tout au long de leur visite, elles ont observé la beauté naturelle et les riches ressources de Madagascar, ainsi que les défis sociaux et économiques significatifs auxquels la population locale est confrontée. Cette mission a souligné leur engagement à aider le peuple malgache à réaliser son développement et son progrès tout en encourageant les sœurs à répondre à l'appel du Saint-Esprit pour aborder les questions contemporaines avec un dévouement renouvelé.</p>
+                     <div class="center-container text-black ">
+                      <h3 class="center-heading"> Mission à Madagascar : Évaluation des besoins et création de liens communautaires</h3>
+                  </div>
+                  <p class="mt-3"> Du 11 au 18 octobre, Sœur Sheeba Thomas, Sœur Chimène et Sœur Shobha Stanly ont entrepris une mission à Madagascar, coïncidant avec la semaine des Fondateurs de leur Congrégation. Malgré des difficultés initiales, notamment la perte du passeport de Sœur Shobha, leur voyage s'est poursuivi avec l'aide de la Providence. À leur arrivée à Antananarivo, elles ont été chaleureusement accueillies par Sœur Miriam du Sacré-Cœur de Raguse. Leur mission les a conduites dans diverses villes, dont Diego et Daraina, où elles ont reçu un accueil enthousiaste, avec des chants et des danses de la part des communautés locales. Elles ont étudié la possibilité d'établir un nouveau couvent, soutenues par l'évêque local Mgr Marc Benjamin et M. Merenti, qui ont offert un terrain à cet effet. À Vohemar, elles ont été témoins de la foi vibrante de plus de 1000 étudiants et villageois, culminant par une Adoration du Saint-Sacrement. La délégation a également participé à une Sainte Eucharistie et à une cérémonie de Confirmation pour 62 enfants et adultes. Tout au long de leur visite, elles ont pu observer la beauté naturelle et les riches ressources de Madagascar, ainsi que les défis sociaux et économiques majeurs auxquels est confrontée la population locale. Cette mission a souligné leur engagement à aider le peuple malgache à se développer et à progresser, tout en encourageant les sœurs à répondre à l'appel de l'Esprit Saint pour affronter les défis contemporains avec un dévouement renouvelé.
+                  </p>
                 </div>
             </div>
         </div>
@@ -369,7 +571,7 @@ L'année 2025 a été marquée par de vastes voyages mondiaux et d'importants ja
                 <div class="card-body">
                     <div class="row">
                         <div class="center-container text-black">
-                            <h3 class="center-heading">Communautés aux Philippines : Une présence croissante depuis 2008</h3>
+                            <h3 class="center-heading">Communautés aux Philippines : une présence croissante depuis 2008</h3>
                         </div>
                         <div class="col-12 col-md-4 mb-3 mb-md-0">
                             <img src="philippian1.jpg" alt="Image 1" class="img-fluid custom-img">
@@ -380,46 +582,48 @@ L'année 2025 a été marquée par de vastes voyages mondiaux et d'importants ja
                         <div class="col-12 col-md-4 mb-3 mb-md-0">
                             <img src="phillipian2.jpg" alt="Image 3" class="img-fluid custom-img">
                         </div><br>
+                       
+                       
                     </div>
-                    <div class="center-container text-black"><br>
-                        <h3 class="center-heading"></h3>
-                    </div>
-                    <p class="mt-3">En 2008, la Congrégation des SJSM a élargi sa mission et établi des communautés aux Philippines, marquant une étape importante dans notre parcours. La décision d'étendre notre portée à ce pays vibrant et diversifié a été motivée par une vision de partager notre Charisme d'Adoration et de Service, enraciné dans la Spiritualité Eucharistique, avec davantage de personnes.
+                     <div class="center-container text-black "><br>
+                      <h3 class="center-heading"> </h3>
+                  </div>
+                  <p class="mt-3"> En 2008, la Congrégation des SJSM a étendu sa mission et établi des communautés aux Philippines, marquant une étape importante dans notre parcours. La décision d'étendre notre action à ce pays dynamique et diversifié a été guidée par la vision de partager notre charisme d'Adoration et de Service, enraciné dans la spiritualité eucharistique, avec un plus grand nombre de personnes.
 
-                    Actuellement, nous avons deux communautés florissantes situées sur différentes îles. Une communauté est située à Cavite City, à proximité de la capitale animée, Manille. Cavite City offre un environnement dynamique où nos sœurs s'engagent dans divers ministères, tendant la main à la population locale avec compassion et dévouement. Cette communauté est devenue un phare d'espoir et d'enrichissement spirituel pour de nombreux résidents.
-
-                    L'autre communauté est située à San Carlos, une autre région importante des Philippines. Cette communauté joue également un rôle crucial dans le développement spirituel et social de la région, favorisant un sentiment d'appartenance et de soutien parmi la population locale. Les sœurs y travaillent sans relâche pour incarner les valeurs de notre Congrégation, faisant une différence tangible dans la vie des personnes qu'elles touchent.
-
-                    L'un des aspects les plus inspirants de notre mission aux Philippines est l'intérêt croissant des jeunes filles à rejoindre notre Congrégation. Beaucoup sont attirées par notre mode de vie, motivées par le désir de vivre le Charisme d'Adoration et de Service. Ces jeunes aspirantes sont désireuses d'embrasser la Spiritualité Eucharistique qui définit notre Congrégation, s'engageant dans une vie de prière, de service et de vie communautaire.
-
-                    L'établissement de ces communautés a non seulement élargi notre portée géographique mais a également enrichi notre Congrégation par la diversité culturelle et l'esprit vibrant du peuple philippin. Alors que nous continuons à nourrir et soutenir ces communautés, nous restons engagés dans notre mission de répandre l'amour, la foi et le service à travers les Philippines et au-delà.<br>
-
-                    En résumé, nos communautés aux Philippines sont des centres florissants de croissance spirituelle et de service. Le dévouement de nos sœurs et la réponse enthousiaste des jeunes aspirantes soulignent la présence impactante de notre Congrégation dans ce beau pays. Nous attendons avec impatience une croissance continue et un engagement plus profond avec la communauté philippine, favorisant un avenir rempli d'espoir et de foi.</p>
+                    Actuellement, nous avons deux communautés florissantes situées sur des îles différentes. L'une de ces communautés est située à Cavite City, à proximité de la capitale animée, Manille. Cavite City offre un environnement dynamique où nos sœurs s'engagent dans divers ministères, allant à la rencontre de la population locale avec compassion et dévouement. Cette communauté est devenue un phare d'espérance et d'enrichissement spirituel pour de nombreux habitants.
+                    
+                    L'autre communauté se trouve à San Carlos, une autre région importante des Philippines. Cette communauté joue également un rôle crucial dans le développement spirituel et social de la région, favorisant un sentiment d'appartenance et de soutien au sein de la population locale. Les sœurs y travaillent sans relâche pour incarner les valeurs de notre Congrégation, apportant un changement tangible dans les vies qu'elles touchent.
+                    
+                    L'un des aspects les plus inspirants de notre mission aux Philippines est l'intérêt croissant des jeunes filles pour rejoindre notre Congrégation. Beaucoup sont attirées par notre mode de vie, motivées par le désir de vivre le charisme d'Adoration et de Service. Ces jeunes aspirantes ont à cœur d'embrasser la spiritualité eucharistique qui définit notre Congrégation, en s'engageant dans une vie de prière, de service et de vie communautaire.
+                    
+                    L'établissement de ces communautés a non seulement élargi notre rayonnement géographique, mais a également enrichi notre Congrégation grâce à la diversité culturelle et à l'esprit vibrant du peuple philippin. Alors que nous continuons à nourrir et à soutenir ces communautés, nous restons engagées dans notre mission de répandre l'amour, la foi et le service à travers les Philippines et au-delà.<br>
+                    
+                    En résumé, nos communautés aux Philippines sont des centres florissants de croissance spirituelle et de service. Le dévouement de nos sœurs et la réponse enthousiaste des jeunes aspirantes soulignent la présence impactante de notre Congrégation dans ce beau pays. Nous nous réjouissons à la perspective d'une croissance future et d'un engagement encore plus profond auprès de la communauté philippine, pour un avenir rempli d'espérance et de foi.
                 </div>
             </div>
         </div>
     </div>
 </div>
 
-</div>
+
 <div class="container mt-5">
   <div class="row justify-content-center align-items-stretch">
       <div class="col-md-12">
           <div class="card custom-card">
               <div class="card-body text-center">
-                  <h3 class="center-heading text-black mb-4">Communautés en Ukraine : Une présence croissante depuis 1998</h3>
-                  <img src="new.jpeg" alt="Image de la communauté" class="img-fluid custom-img" style="width: 100%; height: 400px; object-fit: cover;">
+                  <h3 class="center-heading text-black mb-4">Communautés en Ukraine : une présence croissante depuis 1998</h3>
+                  <img src="new.jpeg" alt="Community Image" class="img-fluid custom-img" style="width: 100%; height: 400px; object-fit: cover;">
 
-                  <p class="mt-3">Romains 8, 35 – 39 : Qui nous séparera de l'amour du Christ ? La détresse, l'angoisse, la persécution, la faim, le dénuement, le danger, ou l'épée ?
-                  J'en ai l'assurance : ni la mort, ni la vie, ni les anges, ni les dominations, ni le présent, ni l'avenir, ni les puissances, ni ce qui est en haut, ni ce qui est en bas, ni aucune autre créature, rien ne pourra nous séparer de l'amour de Dieu manifesté en Jésus Christ notre Seigneur.
-                  Ces trois jeunes sœurs (Sr. Emmanuela, Sr. Mischel & Sr. Tadea) de notre Région d'Ukraine ont pris ce texte de Saint Paul au sérieux et ont décidé de suivre Jésus. Malgré l'alerte quotidienne aux missiles et de nombreuses difficultés pendant plus de deux ans de guerre, elles ont prononcé joyeusement leurs vœux le 7 septembre 2024 pour devenir les épouses de Jésus.
-                  Félicitations, mes chères Sœurs ! Puissiez-vous expérimenter la protection, la sollicitude et la fidélité de Dieu à chaque étape de votre vie !
+                  <p class="mt-3 ">Rm 8, 35-39 : Qui pourra nous séparer de l'amour du Christ ? La détresse, l'angoisse, la persécution, la faim, le dénuement, le danger, le glaive ? (...) Mais en tout cela nous sommes les grands vainqueurs grâce à celui qui nous a aimés. Car j'en ai la certitude : ni la mort ni la vie, ni les anges ni les Principautés célestes, ni le présent ni l'avenir, ni les puissances, ni les hauteurs, ni les abîmes, ni aucune autre créature, rien ne pourra nous séparer de l'amour de Dieu manifesté dans le Christ Jésus notre Seigneur.
+                    Ces trois jeunes sœurs (Sœur Emmanuela, Sœur Mischel & Sœur Tadea) de notre Région d'Ukraine ont pris ce texte de Saint Paul au sérieux et se sont consacrées à la suite de Jésus. Malgré les alertes de missiles plusieurs fois par jour et les nombreuses difficultés traversées en ce temps de guerre depuis plus de deux ans, elles ont joyeusement prononcé leurs vœux le 7 septembre 2024 pour devenir épouses du Christ. 
+                    Félicitations chaleureuses, mes chères sœurs ! Puissiez-vous faire l'expérience de la protection, de la bienveillance et de la fidélité de Dieu à chaque étape de votre vie !
+                    
+
                   </p>
               </div>
           </div>
       </div>
   </div>
-</div>
 </div>
 
 <div class="section sec-news">
@@ -439,31 +643,30 @@ L'année 2025 a été marquée par de vastes voyages mondiaux et d'importants ja
       <img src="image/image12.jpeg" alt="Image 10">
     </div>
     <div> 
-         <p>
-            Du 18 octobre au 12 novembre 2024, j'ai voyagé aux États-Unis avec Sœur Mary Kannampuzha. Après avoir reçu mon visa à la dernière minute, nous avons pris l'avion de Francfort à Corpus Christi, Texas, où les températures dépassaient 30°C – un contraste frappant avec les 16-18°C en France. Malgré le changement climatique, nous avons été accueillies chaleureusement et bien soignées. La communauté de Corpus Christi se compose de trois sœurs, toutes travaillant dans un hôpital.
+        <p>
+            Du 18 octobre au 12 novembre 2024, j'ai voyagé avec Sœur Mary Kannampuzha aux États-Unis. Après avoir reçu mon visa à la dernière minute, nous avons pris l'avion de Francfort pour Corpus Christi, au Texas. La température y dépassait les 30°C, bien plus chaude qu'en France, mais nos sœurs nous ont accueillies chaleureusement et ont pris grand soin de nous. La communauté de Corpus Christi compte trois sœurs qui travaillent dans un hôpital.
         </p>
         <p>
-            Ensuite, nous avons visité San Antonio et participé au 150e anniversaire de l'Archidiocèse, où nous avons rencontré l'Archevêque Gustavo Garcia-Siller. À New York, nous avons visité les communautés du Diocèse de Brooklyn et plusieurs lieux significatifs. Nous nous sommes également rendues en Caroline du Nord, dans l'Ohio et en Pennsylvanie pour rencontrer nos sœurs aînées, y compris Mère Raphael, âgée de 99 ans, qui sert toujours avec dévouement.
+            Nous avons ensuite visité San Antonio, où nous avons célébré le 150ème anniversaire de l'archidiocèse et rencontré l'archevêque Gustavo Garcia-Siller. À New York, nous avons visité les communautés du diocèse de Brooklyn et exploré quelques lieux emblématiques. Nous avons également voyagé en Caroline du Nord, en Ohio et en Pennsylvanie, à la rencontre de nos sœurs aînées, notamment Mère Raphaël qui, à 99 ans, sert toujours avec joie et dévouement.
         </p>
         <p>
-            Ce voyage a été marqué par l'amour, l'hospitalité et l'engagement de nos sœurs. Bien que loin de leurs provinces, elles vivent notre Charisme avec simplicité et foi et sont très appréciées dans leurs communautés locales. Je remercie Dieu et toutes nos sœurs pour cette expérience enrichissante, qui souligne la vitalité des SJSM aux États-Unis.
+            Ce voyage a été rempli d'amour et d'hospitalité. Nos sœurs aux États-Unis vivent simplement, incarnant notre charisme et servant avec foi et dévotion. Je rends grâce à Dieu et remercie toutes les sœurs qui ont fait de ce voyage une expérience mémorable et inspirante, montrant que l'esprit des SJSM est bel et bien vivant aux États-Unis.
         </p>
         <p>
-            <strong>Sr. Shobha Stanly,<br>
-            Supérieure Générale SJSM</strong>
+            <strong>Sœur Shobha Stanly,<br>
+            Supérieure Générale des SJSM</strong>
         </p>
     </div>
     
     </div>
   </div>
-  </div>
 </div>
+
 <div class="section sec-news">
   <div class="container">
     <div class="card-body text-center">
-      <h3 class="center-heading text-black mb-4">Aperçus de la Visite en Inde</h3>
+      <h3 class="center-heading text-black mb-4">Aperçus de la visite en Inde</h3>
 
-     
       <div class="usa-visit-gallery">
         <img src="indianvisit/WhatsApp Image 2025-04-04 at 11.11.34 (1).jpeg" alt="">
         <img src="indianvisit/WhatsApp Image 2025-04-04 at 11.11.34 (2).jpeg" alt="">
@@ -495,77 +698,77 @@ L'année 2025 a été marquée par de vastes voyages mondiaux et d'importants ja
         <img src="indianvisit/WhatsApp Image 2025-04-04 at 11.11.39 (3).jpeg" alt="">
         <img src="indianvisit/WhatsApp Image 2025-04-04 at 11.11.39.jpeg" alt="">
       </div>
+
     </div>
   </div>
 </div>
-<div class="site-footer">
-  <div class="container">
-      <div class="row">
-          <div class="col-lg-4">
-              <div class="widget">
-                  <h3>À propos</h3>
-                  <p>Ce site web concerne les Sœurs de Saint-Joseph de Saint-Marc et leur charisme et spiritualité de vie.</p>
-              </div> <div class="widget">
-                  <address>22, Avenue Foch, Colmar 68000
-                      <br> France</address>
-                  <ul class="list-unstyled links">
-                      <li><a href="tel://11234567890">03-89-41-12-67</a></li>
-                      <li><a href="mailto:info@mydomain.com">sjsmalsace2024@gmail.com</a></li>
-                  </ul>
-              </div> </div> <div class="col-lg-4">
-              <div class="widget">
-                  <h3>Entreprise</h3>
-                  <ul class="list-unstyled float-start links">
-                      <li><a href="#">À propos de nous</a></li>
-                      <li><a href="#">Blog</a></li>
-                      <li><a href="#">Vision</a></li>
-                      <li><a href="#">Mission</a></li>
-                      <li><a href="#">Termes</a></li>
-                      <li><a href="#">Confidentialité</a></li>
-                  </ul>
-                  </ul>
-              </div> </div> <div class="col-lg-4">
-              <div class="widget">
-                  <h3>Navigation</h3>
-                  <ul class="list-unstyled links mb-4">
-                      <li><a href="#">Notre Vision</a></li>
-                      <li><a href="#">À propos de nous</a></li>
-                      <li><a href="#">Contactez-nous</a></li>
-                  </ul>
 
-                  <h3>Réseaux Sociaux</h3>
-                  <ul class="list-unstyled social">
-                      <li><a href="#"><span class="icon-instagram"></span></a></li>
-                      <li><a href="#"><span class="icon-twitter"></span></a></li>
-                      <li><a href="#"><span class="icon-facebook"></span></a></li>
-                      <li><a href="#"><span class="icon-linkedin"></span></a></li>
-                      <li><a href="#"><span class="icon-pinterest"></span></a></li>
-                      <li><a href="#"><span class="icon-dribbble"></span></a></li>
-                  </ul>
-              </div> </div> </div> <div class="row mt-5">
-            <div class="col-lg-7 text-center mx-auto">
-                <p class="copyright">
-                    Copyright &copy;<script>document.write(new Date().getFullYear());</script>. Tous droits réservés. &mdash; Conçu avec amour par <a href="https://untree.co">Untree.co</a>
-                </p>
-            </div>
+<div class="site-footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-4">
+                <div class="widget">
+                    <h3>À propos</h3>
+                    <p>Ce site internet est dédié aux Sœurs de Saint-Joseph de Saint-Marc, à leur charisme et à leur spiritualité au quotidien.</p>
+                </div> <div class="widget">
+                    <address>22, Avenue Foch, Colmar 68000
+                         <br> France</address>
+                    <ul class="list-unstyled links">
+                        <li><a href="tel://11234567890">03-89-41-12-67</a></li>
+                    <li><a href="mailto:info@mydomain.com">sjsmalsace2024@gmail.com</a></li>
+                    </ul>
+                </div> </div> <div class="col-lg-4">
+                <div class="widget">
+                    <h3>Congrégation</h3>
+                    <ul class="list-unstyled float-start links">
+                        <li><a href="#">À propos de nous</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Vision</a></li>
+                        <li><a href="#">Mission</a></li>
+                        <li><a href="#">Mentions légales</a></li>
+                        <li><a href="#">Confidentialité</a></li>
+                    </ul>
+                </div> </div> <div class="col-lg-4">
+                <div class="widget">
+                    <h3>Navigation</h3>
+                    <ul class="list-unstyled links mb-4">
+                        <li><a href="#">Notre Vision</a></li>
+                        <li><a href="#">À propos de nous</a></li>
+                        <li><a href="#">Nous contacter</a></li>
+                    </ul>
+
+                    <h3>Réseaux sociaux</h3>
+                    <ul class="list-unstyled social">
+                        <li><a href="#"><span class="icon-instagram"></span></a></li>
+                        <li><a href="#"><span class="icon-twitter"></span></a></li>
+                        <li><a href="#"><span class="icon-facebook"></span></a></li>
+                        <li><a href="#"><span class="icon-linkedin"></span></a></li>
+                        <li><a href="#"><span class="icon-pinterest"></span></a></li>
+                        <li><a href="#"><span class="icon-dribbble"></span></a></li>
+                    </ul>
+                </div> </div> </div> <div class="row mt-5">
+            <div class="col-12 text-center">
+                    <p>Copyright &copy;<script>document.write(new Date().getFullYear());</script>. Tous droits réservés. &mdash; Conçu avec amour par <a href="sajanhenry2005@gmail.com">Sajanhenry</a>. Distribué par les <a href="">SJSM</a> </p>
+          </div>
+        </div>
+      </div> </div> <div id="overlayer"></div>
+    <div class="loader">
+        <div class="spinner-border text-primary" role="status">
+            <span class="visually-hidden">Loading...</span>
         </div>
     </div>
-</div>
 
-<div id="overlayer"></div>
-<div class="loader">
-    <div class="spinner-border" role="status">
-        <span class="visually-hidden">Chargement...</span>
-    </div>
-</div>
 
-<script src="js/bootstrap.bundle.min.js"></script>
-<script src="js/tiny-slider.js"></script>
-<script src="js/aos.js"></script>
-<script src="js/navbar.js"></script>
-<script src="js/glightbox.min.js"></script>
-<script src="js/flatpickr.js"></script>
-<script src="js/custom.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/tiny-slider.js"></script>
 
-</body>
-</html>
+    <script src="js/flatpickr.min.js"></script>
+
+
+    <script src="js/aos.js"></script>
+    <script src="js/glightbox.min.js"></script>
+    <script src="js/navbar.js"></script>
+    <script src="js/counter.js"></script>
+    <script src="js/custom.js"></script>
+  </body>
+  </html>
